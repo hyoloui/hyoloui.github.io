@@ -2,7 +2,7 @@
 title: "CSS 는 '인테리어'"
 description: "HTML 부모-자식 구조와 link 태그로 CSS 파일을 분리하는 이유를 인테리어에 비유해 설명한 CSS 기초 글."
 authors: [hyoloui]
-tags: [html-css]
+tags: [css]
 ---
 
 > '가게를 인테리어를 하려면 많은 도구들이 필요하겠지? 아니면 시중에 파는 제품을 사와도 좋고'
