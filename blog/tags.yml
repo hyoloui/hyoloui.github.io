@@ -1,48 +1,185 @@
-algorithm:
-  label: Algorithm & Data Structure
-  permalink: /algorithm
-  description: 알고리즘·자료구조 문제 풀이
+# 언어·프레임워크
 javascript:
-  label: Javascript
+  label: JavaScript
   permalink: /javascript
-  description: 자바스크립트 학습 기록
+  description: 자바스크립트 문법과 동작 원리
 typescript:
-  label: Typescript
+  label: TypeScript
   permalink: /typescript
-  description: 타입스크립트 학습 기록
+  description: 타입스크립트 타입 시스템과 활용
 react:
-  label: React.js
+  label: React
   permalink: /react
-  description: 리액트 학습 기록
+  description: 리액트 컴포넌트, 훅, 렌더링
+nextjs:
+  label: Next.js
+  permalink: /nextjs
+  description: Next.js App Router, 서버·클라이언트 컴포넌트, 라우팅
 react-native:
   label: React Native
   permalink: /react-native
-  description: 리액트 네이티브 학습 기록
-html-css:
-  label: HTML, CSS
-  permalink: /html-css
-  description: HTML과 CSS 학습 기록
-git:
-  label: Git
-  permalink: /git
-  description: Git 사용법 기록
+  description: 리액트 네이티브와 Expo 앱 개발
 python:
   label: Python
   permalink: /python
-  description: 파이썬 학습 기록
-web:
-  label: Web
-  permalink: /web
-  description: 웹 기초 지식 기록
+  description: 파이썬 문법과 백엔드 기초
+c-lang:
+  label: C
+  permalink: /c-lang
+  description: C 언어 학습 기록
+
+# UI·스타일
+html:
+  label: HTML
+  permalink: /html
+  description: HTML 태그와 시멘틱 마크업
+css:
+  label: CSS
+  permalink: /css
+  description: CSS 레이아웃과 스타일링
+tailwind:
+  label: Tailwind CSS
+  permalink: /tailwind
+  description: Tailwind CSS 설정과 클래스 관리
+design-system:
+  label: Design System
+  permalink: /design-system
+  description: 디자인 토큰, 공용 컴포넌트, 아이콘
+ui-ux:
+  label: UI/UX
+  permalink: /ui-ux
+  description: 화면 설계와 사용자 경험
+animation:
+  label: Animation
+  permalink: /animation
+  description: 스크롤·모션 애니메이션
+
+# 기능 구현
+state-management:
+  label: State Management
+  permalink: /state-management
+  description: Redux, Recoil, URL 상태 등 상태 관리
+data-fetching:
+  label: Data Fetching
+  permalink: /data-fetching
+  description: axios, React Query, fetch, 캐시 무효화
+forms:
+  label: Forms
+  permalink: /forms
+  description: 폼 구현과 입력 검증 (React Hook Form, Zod)
+auth:
+  label: Auth
+  permalink: /auth
+  description: 로그인, 토큰, 권한, 본인인증
+date-time:
+  label: Date & Time
+  permalink: /date-time
+  description: 날짜·시간대 처리와 캘린더
+file-export:
+  label: File Export
+  permalink: /file-export
+  description: 엑셀·PDF 파일 내보내기
+image:
+  label: Image
+  permalink: /image
+  description: 이미지 변환, 압축, 최적화
+editor:
+  label: Text Editor
+  permalink: /editor
+  description: 리치 텍스트 에디터 도입과 문제 해결
+
+# 품질·설계
+testing:
+  label: Testing
+  permalink: /testing
+  description: 단위 테스트와 테스트 코드 작성
+error-handling:
+  label: Error Handling
+  permalink: /error-handling
+  description: 예외 처리와 Sentry 에러 모니터링
+performance:
+  label: Performance
+  permalink: /performance
+  description: 렌더링·로딩 성능 개선
+refactoring:
+  label: Refactoring
+  permalink: /refactoring
+  description: 구조 개선과 중복 제거
+architecture:
+  label: Architecture
+  permalink: /architecture
+  description: 설계 문서와 구조 결정
+troubleshooting:
+  label: Troubleshooting
+  permalink: /troubleshooting
+  description: 에러 원인 분석과 해결 기록
+
+# 개발 환경·도구
+deployment:
+  label: Deployment
+  permalink: /deployment
+  description: 배포 환경과 CI/CD
+tooling:
+  label: Tooling
+  permalink: /tooling
+  description: 패키지 매니저, ESLint, 빌드 설정
+git:
+  label: Git
+  permalink: /git
+  description: Git과 GitHub 협업
+docusaurus:
+  label: Docusaurus
+  permalink: /docusaurus
+  description: Docusaurus 블로그 구축
+ai-agent:
+  label: AI Agent
+  permalink: /ai-agent
+  description: Claude Code 등 AI 에이전트와 함께 개발하기
+supabase:
+  label: Supabase
+  permalink: /supabase
+  description: Supabase 인증과 데이터베이스
+firebase:
+  label: Firebase
+  permalink: /firebase
+  description: Firebase Firestore와 인증
+
+# CS 기초
+algorithm:
+  label: Algorithm
+  permalink: /algorithm
+  description: 알고리즘 문제 풀이와 정렬
+data-structure:
+  label: Data Structure
+  permalink: /data-structure
+  description: 배열, 리스트, 스택, 큐, 트리
+network:
+  label: Network
+  permalink: /network
+  description: HTTP, REST API, 서버 통신
+browser:
+  label: Browser
+  permalink: /browser
+  description: 브라우저 렌더링, DOM, 저장소, 캐시
+cs:
+  label: CS
+  permalink: /cs
+  description: 컴퓨터 과학 기초 개념
+
+# 기록
+project:
+  label: Team Project
+  permalink: /project
+  description: 부트캠프 팀 프로젝트 기록
+side-project:
+  label: Side Project
+  permalink: /side-project
+  description: 개인 사이드 프로젝트
 wil:
   label: WIL
   permalink: /wil
   description: Weekly I Learned, 한 주의 배움과 회고
-project:
-  label: Project
-  permalink: /project
-  description: 프로젝트 진행 기록
 career:
   label: Career
   permalink: /career
-  description: 커리어와 기술 성장 기록
+  description: 입사, 면접, 커리어 이정표
