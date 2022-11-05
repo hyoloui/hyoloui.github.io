@@ -2,7 +2,7 @@
 title: "HTML 은 '건축물' 입니다."
 description: "HTML을 인테리어가 안 된 시멘트 건물에 비유해 설명하고, head와 body 구성과 HTML의 역할을 정리한 글."
 authors: [hyoloui]
-tags: [html-css]
+tags: [html]
 ---
 
 > '너가 장사를 하려고 하는데, 공간이 필요하겠지?
