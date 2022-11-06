@@ -2,7 +2,7 @@
 title: "서버 통신? 어렵죠? '한방에 이해 시켜드릴게요'"
 description: "음식점 비유로 JSON, GET/POST 요청, Ajax의 개념과 기본 골격을 정리한 서버-클라이언트 통신 입문 글."
 authors: [hyoloui]
-tags: [javascript]
+tags: [network, javascript]
 ---
 
 :::note 음식점으로 이해하는 서버 통신
