@@ -2,7 +2,7 @@
 title: "프론트엔드와 백엔드 연결 방법?"
 description: "식당 비유로 POST 요청과 GET 요청이 프론트엔드와 백엔드를 어떻게 연결하는지 설명한 글."
 authors: [hyoloui]
-tags: [python]
+tags: [python, network]
 ---
 
 눈에 보여지는 '프론트엔드'는 UI 부분, 식당으로 말하자면 식당 외부, 내부(인테리어)다.
