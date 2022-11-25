@@ -2,7 +2,7 @@
 title: "html form 태그 속성"
 description: "form 태그의 하위 요소, onsubmit과 preventDefault, input의 type·value, label 연결, button type까지 정리한 TIL."
 authors: [hyoloui]
-tags: [html-css]
+tags: [html]
 ---
 
 ❤️‍🔥 TIL : Today I Learned
