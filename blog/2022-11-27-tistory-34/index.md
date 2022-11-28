@@ -2,7 +2,7 @@
 title: "자바스크립트 문법 - try, catch() 에러 핸들링"
 description: "try...catch...finally의 동작 방식, 런타임·비동기 에러의 한계, 에러 객체와 throw로 직접 에러를 만드는 방법 정리."
 authors: [hyoloui]
-tags: [javascript]
+tags: [javascript, error-handling]
 ---
 
 ❤️‍🔥 TIL : Today I Learned
