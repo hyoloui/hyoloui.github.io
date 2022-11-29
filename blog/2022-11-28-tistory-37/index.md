@@ -2,7 +2,7 @@
 title: "fanpick 프로젝트 셀프 코드 리뷰 - CRUD(in C)"
 description: "fanpick 프로젝트에서 Firebase addDoc으로 게시글을 생성하는 Create API 코드를 리뷰하고 수정한 점을 정리한 글."
 authors: [hyoloui]
-tags: [javascript]
+tags: [project, javascript]
 ---
 
 ❤️‍🔥 TIL : Today I Learned
