@@ -2,7 +2,7 @@
 title: "fanpick 프로젝트 셀프 코드 리뷰 - CRUD(in R)"
 description: "fanpick 프로젝트의 Read API 구현 코드(게시글 목록 조회, 모달 상세 보기, 작성자 확인)를 리뷰하고 고민한 점을 정리한 글."
 authors: [hyoloui]
-tags: [javascript]
+tags: [project, javascript]
 ---
 
 ❤️‍🔥 TIL : Today I Learned
