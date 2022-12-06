@@ -2,7 +2,7 @@
 title: "Yarn VS NPM"
 description: "Node.js 패키지 관리자 yarn과 npm의 설치 방법, 명령어 비교, 속도와 보안 측면의 차이점 정리."
 authors: [hyoloui]
-tags: [javascript]
+tags: [tooling]
 ---
 
 ❤️‍🔥 TIL : Today I Learned
