@@ -2,7 +2,7 @@
 title: "리액트 - 구조 분해 할당(js 문법)"
 description: "배열과 객체의 구조 분해 할당 문법과, 리액트의 useState·props·함수 컴포넌트 인자에서 구조 분해 할당을 쓰는 방법 정리."
 authors: [hyoloui]
-tags: [react]
+tags: [javascript, react]
 ---
 
 TIL : Today I Learned
