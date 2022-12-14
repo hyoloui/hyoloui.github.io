@@ -2,7 +2,7 @@
 title: "리액트 - Cannot update a component 에러"
 description: "onClick에 함수를 호출식으로 넘기면 렌더링 중 setState가 실행되어 Cannot update a component 에러가 난다. 화살표 함수 콜백으로 해결."
 authors: [hyoloui]
-tags: [react]
+tags: [react, troubleshooting]
 ---
 
 작업 중 콘솔에 출력된 에러와 해결 방법을 기록한다.
