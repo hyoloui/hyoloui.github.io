@@ -2,7 +2,7 @@
 title: "리액트 - children 안보임 에러 해결"
 description: "에러도 없이 children이 화면에 나오지 않던 원인은 자동완성으로 들어온 대문자 Children이었다. 소문자 children으로 고쳐 해결."
 authors: [hyoloui]
-tags: [react]
+tags: [react, troubleshooting]
 ---
 
 리액트 이 녀석.... 간만에 휴먼 에러를 만났다. 아주 간단한 코드였고, 콘솔에 에러도 안 나고, 문제 없을 리가 없는데 의도한 children 이 나오지를 않았다...
