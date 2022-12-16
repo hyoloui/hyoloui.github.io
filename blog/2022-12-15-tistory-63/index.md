@@ -2,7 +2,7 @@
 title: "리액트 - 어렵지만 꼭 필요한 'Redux'"
 description: "Redux의 정의와 핵심 요소(Action, Reducer, Store, Dispatch, Subscribe, Middleware), 데이터 흐름 정리."
 authors: [hyoloui]
-tags: [react]
+tags: [react, state-management]
 ---
 
 TIL : Today I Learned
