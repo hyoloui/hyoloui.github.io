@@ -2,7 +2,7 @@
 title: "리액트 - pathname 에러 (Router)"
 description: "Cannot read properties of undefined (reading 'pathname') 에러의 원인은 자동완성으로 잘못 import된 react-router-dom의 Router였다."
 authors: [hyoloui]
-tags: [react]
+tags: [react, troubleshooting]
 ---
 
 콘솔에 `Uncaught TypeError: Cannot read properties of undefined (reading 'pathname')` 에러가 발생했다.
