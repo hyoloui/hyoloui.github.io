@@ -2,7 +2,7 @@
 title: "리액트 - Prop Drilling  (redux를 사용해야 하는 이유 )"
 description: "props를 여러 단계의 하위 컴포넌트로 계속 내려줘야 하는 Prop Drilling 문제를 예제로 보고, 전역 상태관리 라이브러리 Redux가 필요한 이유 정리."
 authors: [hyoloui]
-tags: [react]
+tags: [react, state-management]
 ---
 
 TIL : Today I Learned
