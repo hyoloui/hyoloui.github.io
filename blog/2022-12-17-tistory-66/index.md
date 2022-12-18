@@ -2,7 +2,7 @@
 title: "리액트 - React를 Redux로 전역 상태관리를 해보자"
 description: "react-redux 설치부터 Provider, configStore, counter 모듈(ducks 패턴), useDispatch·useSelector 사용까지 Redux 기본 세팅 실습."
 authors: [hyoloui]
-tags: [react]
+tags: [react, state-management]
 ---
 
 TIL : Today I Learned
