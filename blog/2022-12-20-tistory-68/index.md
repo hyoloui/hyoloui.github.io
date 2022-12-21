@@ -2,7 +2,7 @@
 title: "리액트 - Redux-Toolkit 개념과 설치"
 description: "Redux-Toolkit(RTK)의 개념, 설치 방법, 일반 리덕스와의 코드 비교, createSlice 구조와 configureStore 설정 정리."
 authors: [hyoloui]
-tags: [react]
+tags: [react, state-management]
 ---
 
 TIL : Today I Learned
