@@ -2,7 +2,7 @@
 title: "리액트 - axios (서버통신 라이브러리) 개념과 설치 명령어"
 description: "Promise 기반 HTTP 클라이언트 axios의 설치와 json-server를 대상으로 한 GET, POST, DELETE, PATCH 요청 예제 정리."
 authors: [hyoloui]
-tags: [react]
+tags: [react, data-fetching]
 ---
 
 TIL : Today I Learned
