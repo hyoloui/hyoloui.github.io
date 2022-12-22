@@ -2,7 +2,7 @@
 title: "리액트 - 로컬에서 JSON-server 구축하기"
 description: "mock data용 임시 API 서버 json-server를 설치하고 db.json으로 실행해 브라우저에서 GET 응답을 확인하는 방법."
 authors: [hyoloui]
-tags: [react]
+tags: [data-fetching, tooling]
 ---
 
 TIL : Today I Learned
