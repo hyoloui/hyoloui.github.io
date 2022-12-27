@@ -2,7 +2,7 @@
 title: "Project : helprogrammers - 상세 페이지"
 description: "상세 페이지 구현 중 새로고침하면 state가 사라지는 문제를 useParams와 createAsyncThunk로 해결한 과정."
 authors: [hyoloui]
-tags: [project]
+tags: [project, react]
 ---
 
 ❤️‍🔥TIL : Today I Learned
