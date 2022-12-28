@@ -2,7 +2,7 @@
 title: "helprogrammers 프로젝트 - useRef(리액트 훅)"
 description: "유효성 검사 실패 시 input에 auto focus를 주려다, DOM 직접 조작 대신 useRef 훅으로 해결한 과정과 custom hook 인자 전달 실수 기록."
 authors: [hyoloui]
-tags: [react]
+tags: [project, react]
 ---
 
 TIL : Today I Learned
