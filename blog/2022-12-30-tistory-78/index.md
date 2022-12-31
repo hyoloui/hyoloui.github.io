@@ -2,7 +2,7 @@
 title: "리액트 네이티브 - 새로운 프로젝트 만들기 (expo), 에러 해결"
 description: "expo와 eas-cli로 리액트 네이티브 프로젝트를 만들고 스마트폰에서 구동하는 과정, 그리고 expo request time out과 ngrok tunnel 오류를 해결한 방법."
 authors: [hyoloui]
-tags: [react-native]
+tags: [react-native, troubleshooting]
 ---
 
 :::note 목적
