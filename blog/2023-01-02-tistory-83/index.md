@@ -2,7 +2,7 @@
 title: "리액트 네이티브 - 'Todo-List' 수정 버튼 클릭 시 이전값이 계속 나오는 오류"
 description: "수정 버튼을 눌렀을 때 이전에 수정했던 값이 다른 투두에도 남아 있던 문제를 TextInput의 value 대신 defaultValue로 해결한 TIL."
 authors: [hyoloui]
-tags: [react-native]
+tags: [react-native, troubleshooting]
 ---
 
 :::note TIL : Today I Learned
