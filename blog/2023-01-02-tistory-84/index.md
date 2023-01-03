@@ -2,7 +2,7 @@
 title: "리액트 네이티브 - CRUD: Read API (useEffect와 onSnapshot 활용하기)"
 description: "Firestore의 onSnapshot API를 useEffect 안에서 사용해 todos를 실시간으로 읽어오고, map으로 화면에 그린 뒤 카테고리별로 분류하는 방법."
 authors: [hyoloui]
-tags: [react-native]
+tags: [react-native, firebase]
 ---
 
 :::note TIL : Today I Learned
