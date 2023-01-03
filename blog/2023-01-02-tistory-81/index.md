@@ -2,7 +2,7 @@
 title: "리액트 네이티브 - CRUD: Create API, Firebase 연결하기"
 description: "리액트 네이티브 To-Do-List 앱의 레이아웃을 만들고, TextInput 입력을 state 배열에 저장한 뒤 Firebase Firestore에 연결해 Create를 구현한 과정."
 authors: [hyoloui]
-tags: [react-native]
+tags: [react-native, firebase]
 ---
 
 :::note 목적
