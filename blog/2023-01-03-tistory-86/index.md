@@ -2,7 +2,7 @@
 title: "리액트 네이티브 - CRUD: Delete API (deleteDoc( ) 활용하기), CRUD 최종 완성"
 description: "Firestore의 deleteDoc으로 todo를 삭제하고, RN에서 confirm 대신 Alert 버튼을 커스텀해 삭제 확인 창을 만들어 CRUD를 완성한 과정."
 authors: [hyoloui]
-tags: [react-native]
+tags: [react-native, firebase]
 ---
 
 :::note 목적
