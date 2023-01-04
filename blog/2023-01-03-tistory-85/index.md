@@ -2,7 +2,7 @@
 title: "리액트 네이티브 - CRUD: Update API (updateDoc( ) 활용하기)"
 description: "Firestore의 updateDoc으로 todo의 isDone과 text를 수정하는 Update API를 만들고, indexOf is not a function 오류를 해결한 과정."
 authors: [hyoloui]
-tags: [react-native]
+tags: [react-native, firebase]
 ---
 
 :::note 목적
