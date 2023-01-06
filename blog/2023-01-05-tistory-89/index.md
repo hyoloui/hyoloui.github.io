@@ -2,7 +2,7 @@
 title: "리액트 네이티브 - Movies app : Open API 활용 JSON 가져오기"
 description: "TMDB Open API로 영화 데이터를 fetch해 화면에 그리고, language 옵션으로 한글 번역본을 적용하며 빈 overview를 처리한 과정."
 authors: [hyoloui]
-tags: [react-native]
+tags: [react-native, data-fetching]
 ---
 
 :::note 목적
