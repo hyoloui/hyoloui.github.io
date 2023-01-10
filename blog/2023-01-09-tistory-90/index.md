@@ -2,7 +2,7 @@
 title: "리액트 네이티브 - Movies app : React-Query (useQuery) 적용"
 description: "서버 상태 관리 라이브러리 React Query의 설정과 useQuery 사용법, 기존 useState 코드를 useQuery로 리팩토링하고 refetchQueries와 isLoading 일괄 처리까지 적용한 과정."
 authors: [hyoloui]
-tags: [react-native]
+tags: [react-native, data-fetching]
 ---
 
 :::note 목적
