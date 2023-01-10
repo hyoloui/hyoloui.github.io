@@ -2,7 +2,7 @@
 title: "Project : MZL - 회원가입"
 description: "React Native에서 Firebase Authentication으로 회원가입을 구현하고, 유효성 검사와 키보드 스크롤 문제를 해결한 과정."
 authors: [hyoloui]
-tags: [project]
+tags: [project, auth]
 ---
 
 :::note 🎯목적
