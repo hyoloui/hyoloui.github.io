@@ -2,7 +2,7 @@
 title: "Project : MZL - 로그인"
 description: "React Native에서 Firebase Authentication의 signInWithEmailAndPassword로 로그인을 구현하고, 유효성 검사를 함수로 분리한 과정."
 authors: [hyoloui]
-tags: [project]
+tags: [project, auth]
 ---
 
 :::note 🎯목적
