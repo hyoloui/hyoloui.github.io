@@ -2,7 +2,7 @@
 title: "Project : MZL - 로그아웃, 마이페이지 이동 시 에러해결"
 description: "닉네임 수정과 로그아웃을 구현하고, 로그아웃 후 마이페이지 진입 시 currentUser가 null이라 나던 에러를 useFocusEffect와 return으로 해결한 과정."
 authors: [hyoloui]
-tags: [project]
+tags: [project, auth, troubleshooting]
 ---
 
 :::note 🎯목적
