@@ -2,7 +2,7 @@
 title: "Project : MZL - 배포 및 최종 Pull Request"
 description: "Expo 프로젝트 초기 셋업, dev/release/hotfix 브랜치 전략과 eas update 배포, 63건의 Pull Request로 협업한 경험과 expo id 충돌 해결 회고."
 authors: [hyoloui]
-tags: [react-native]
+tags: [project, deployment]
 ---
 
 :::note 목적
