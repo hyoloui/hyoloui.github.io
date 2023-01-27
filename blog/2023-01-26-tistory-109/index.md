@@ -2,7 +2,7 @@
 title: "Project: Develife - main 구성과 React-Query 적용"
 description: "Youtube API 데이터를 React-Query로 가져와 UI와 모달을 구성하고, filter 메서드가 동작하지 않던 문제를 해결한 과정."
 authors: [hyoloui]
-tags: [project]
+tags: [project, data-fetching]
 ---
 
 :::note 🎯목적
