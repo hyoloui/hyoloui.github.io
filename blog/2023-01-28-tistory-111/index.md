@@ -2,7 +2,7 @@
 title: "Project: Develife - ✨Typescript 리펙토링 과정"
 description: "React로 작성된 Develife 프로젝트를 TypeScript로 리팩토링하는 환경 설정, 타입 정의 과정과 Comment 타입 충돌 에러 해결."
 authors: [hyoloui]
-tags: [project, typescript]
+tags: [project, typescript, refactoring]
 ---
 
 :::note 🎯목적
