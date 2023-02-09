@@ -2,7 +2,7 @@
 title: "Project: 🚩codefolio - supabase API"
 description: "Next.js에서 supabase 키를 .env에 넣었는데 인식되지 않던 문제를 예약어 환경 변수 이름으로 바꿔 해결한 기록."
 authors: [hyoloui]
-tags: [project]
+tags: [project, supabase]
 ---
 
 ## 🤢 문제 내용
