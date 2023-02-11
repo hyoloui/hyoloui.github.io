@@ -2,7 +2,7 @@
 title: "Project: 🚩codefolio - ESlint, prettierrc 설정하기 / as-is to-be : 2"
 description: "Next.js + TypeScript 프로젝트에 ESLint(airbnb)와 prettier를 초기 설정하고 function declaration, non-null assertion 경고를 해결한 과정."
 authors: [hyoloui]
-tags: [project]
+tags: [project, tooling]
 ---
 
 :::note 🎯목적
