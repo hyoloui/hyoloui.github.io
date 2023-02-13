@@ -2,7 +2,7 @@
 title: "Project: 🚩codefolio - DropDown, PostTitle / as-is to-be : 1"
 description: "Next.js 프로젝트의 DropDown 컴포넌트를 data prop으로 options를 만들어 주도록 개선하고, PostTitle 컴포넌트를 작성한 과정."
 authors: [hyoloui]
-tags: [project]
+tags: [project, react]
 ---
 
 :::note 🎯목적
