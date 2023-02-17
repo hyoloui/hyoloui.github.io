@@ -2,7 +2,7 @@
 title: "Project: 🚩codefolio - recoil, supabase Auth"
 description: "supabase Auth의 로그아웃과 getSession으로 로그인 상태를 확인하고, recoil의 atom으로 전역 상태를 관리한 방법."
 authors: [hyoloui]
-tags: [project]
+tags: [project, state-management, auth]
 ---
 
 :::note 🎯목적
