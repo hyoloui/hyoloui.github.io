@@ -2,7 +2,7 @@
 title: "Project: 🚩codefolio - Toast UI Editor 사진 업로드"
 description: "Toast UI Editor에서 이미지 업로드 시 string으로 출력되던 문제를 addImageBlobHook으로 압축, supabase 업로드, url 삽입하도록 개선한 코드."
 authors: [hyoloui]
-tags: [project]
+tags: [project, editor]
 ---
 
 :::note 🎯목적
