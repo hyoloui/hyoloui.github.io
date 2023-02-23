@@ -2,7 +2,7 @@
 title: "Project: 🚩codefolio - toast ui Editor(codeSyntaxHighlightPlugin) 적용 중 에러 노트"
 description: "Next 프로젝트에서 prismjs 타입 선언을 찾지 못해 vercel 빌드가 실패한 문제를 @types/prismjs를 devDependencies로 옮겨 해결한 과정."
 authors: [hyoloui]
-tags: [project]
+tags: [project, editor, troubleshooting]
 ---
 
 :::note 🎯목적
