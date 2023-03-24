@@ -2,7 +2,7 @@
 title: "Project: 🚩codefolio - 텍스트 에디터 변경"
 description: "Toast UI Editor를 UIW Markdown Editor로 바꾸고 툴바를 커스텀해 이미지 업로드, 삽입, 드래그 앤 드랍, 붙여넣기를 구현한 과정."
 authors: [hyoloui]
-tags: [project]
+tags: [project, editor]
 ---
 
 :::note 🎯목적
