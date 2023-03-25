@@ -2,7 +2,7 @@
 title: "Project: 🚩codefolio - 이미지 최적화, 성능 개선"
 description: "browser-image-compression으로 업로드 이미지를 약 80% 압축해 서버 부하를 줄이고, 폰트와 에디터 최적화로 Lighthouse 성능 점수를 74점에서 99점으로 개선한 기록."
 authors: [hyoloui]
-tags: [project]
+tags: [project, image, performance]
 ---
 
 :::note 🎯목적
