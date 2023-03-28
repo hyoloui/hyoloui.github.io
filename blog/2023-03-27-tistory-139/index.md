@@ -2,7 +2,7 @@
 title: "웹페이지가 브라우저에 랜더링되는 과정"
 description: "서버 요청부터 DOM·CSSOM 생성, 렌더 트리, 레이아웃, 페인트까지 브라우저 렌더링 과정과 자바스크립트의 동작을 정리한 글."
 authors: [hyoloui]
-tags: [web]
+tags: [browser]
 ---
 
 :::note 🎯목적
