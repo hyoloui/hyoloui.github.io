@@ -2,7 +2,7 @@
 title: "Restful API란?"
 description: "Restful API의 개념과 GET, POST, PATCH, PUT, DELETE 메서드의 기준, Restful이 아닌 API 설계 방식인 GraphQL을 정리한 글."
 authors: [hyoloui]
-tags: [web]
+tags: [network]
 ---
 
 :::note 🎯목적
