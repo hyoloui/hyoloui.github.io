@@ -2,7 +2,7 @@
 title: "자료구조 배열 vs 자바스크립트 배열"
 description: "메모리가 연속된 자료구조의 밀집 배열과 동적으로 유연한 자바스크립트 희소 배열의 차이, 그리고 성능 차이가 나는 이유 정리."
 authors: [hyoloui]
-tags: [javascript]
+tags: [javascript, data-structure]
 ---
 
 TIL : Today I Learned
