@@ -2,7 +2,7 @@
 title: "parameter와 argument의 차이"
 description: "매개변수(parameter)와 인자(argument)의 차이를 함수 선언과 호출 예시로 정리한 TIL."
 authors: [hyoloui]
-tags: [web]
+tags: [javascript]
 ---
 
 ❤️‍🔥 TIL : Today I Learned
