@@ -2,7 +2,7 @@
 title: "캐시(cache)"
 description: "캐시의 장단점, 프론트엔드에서 캐싱할 수 있는 영역, Cache-Control 헤더 옵션을 정리한 TIL."
 authors: [hyoloui]
-tags: [web]
+tags: [browser, network]
 ---
 
 ❤️‍🔥 TIL : Today I Learned
