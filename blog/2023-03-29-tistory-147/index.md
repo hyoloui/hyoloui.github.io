@@ -2,7 +2,7 @@
 title: "프레임워크와 라이브러리 차이점"
 description: "프레임워크와 라이브러리의 정의, 제어 흐름 차이(제어의 역전), 리액트가 라이브러리인 이유를 정리한 TIL."
 authors: [hyoloui]
-tags: [web]
+tags: [cs]
 ---
 
 ❤️‍🔥 TIL : Today I Learned
