@@ -2,7 +2,7 @@
 title: "모던 Javascript - Ajax"
 description: "Ajax의 개념과 전통적 방식과의 차이, JSON 직렬화·역직렬화, XMLHttpRequest 사용법, fetch API와 Axios 비교 정리."
 authors: [hyoloui]
-tags: [javascript]
+tags: [javascript, network]
 ---
 
 TIL : Today I Learned
