@@ -2,7 +2,7 @@
 title: "모던 Javascript - DOM"
 description: "DOM 트리와 노드 타입, 요소 노드 취득·탐색, 텍스트·HTML 조작, 어트리뷰트와 DOM 프로퍼티의 차이, 스타일과 클래스 조작 정리."
 authors: [hyoloui]
-tags: [javascript]
+tags: [javascript, browser]
 ---
 
 TIL : Today I Learned
