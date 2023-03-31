@@ -2,7 +2,7 @@
 title: "position"
 description: "CSS position 속성의 static, relative, absolute, fixed, sticky 값과 absolute를 부모 기준으로 쓰는 방법을 정리한 TIL."
 authors: [hyoloui]
-tags: [html-css]
+tags: [css]
 ---
 
 ❤️‍🔥 TIL : Today I Learned
