@@ -2,7 +2,7 @@
 title: "HTTP와 HTTP 메세지"
 description: "HTTP의 정의와 비연결성·무상태성 특징, 요청과 응답 메시지의 start-line·헤더 구조를 정리한 TIL."
 authors: [hyoloui]
-tags: [web]
+tags: [network]
 ---
 
 HTTP에 대해 설명하고, 알고있다면 HTTP 메세지 구조에 대해 더 자세히 설명해주세요
