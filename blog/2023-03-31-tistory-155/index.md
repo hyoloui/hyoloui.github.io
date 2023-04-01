@@ -2,7 +2,7 @@
 title: "브라우저 저장소(local storage, session storage, cookie)"
 description: "브라우저 저장소인 Web Storage(localStorage, sessionStorage)와 cookie, session의 차이를 정리한 TIL."
 authors: [hyoloui]
-tags: [web]
+tags: [browser]
 ---
 
 ❤️‍🔥 TIL : Today I Learned
