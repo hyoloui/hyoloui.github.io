@@ -2,7 +2,7 @@
 title: "모던 Javascript - 에러 처리"
 description: "에러 처리의 필요성과 try...catch...finally, Error 객체, throw 문, 에러의 전파와 비동기 함수에서의 주의점 정리."
 authors: [hyoloui]
-tags: [javascript]
+tags: [javascript, error-handling]
 ---
 
 TIL : Today I Learned
