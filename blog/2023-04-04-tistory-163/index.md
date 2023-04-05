@@ -2,7 +2,7 @@
 title: "Cookie의 옵션"
 description: "쿠키의 Expires, Max-Age 옵션과 보안을 위한 Secure, HttpOnly, SameSite 권장사항을 정리한 TIL."
 authors: [hyoloui]
-tags: [web]
+tags: [browser]
 ---
 
 ❤️‍🔥 TIL : Today I Learned
