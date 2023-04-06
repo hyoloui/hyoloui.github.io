@@ -2,7 +2,7 @@
 title: "연결 리스트 || 링크드 리스트"
 description: "연결 리스트의 구조와 단순·원형·이중 연결 리스트의 차이를 설명하고 단순 연결 리스트의 주요 메서드를 자바스크립트로 구현한 정리."
 authors: [hyoloui]
-tags: [algorithm]
+tags: [data-structure]
 ---
 
 ❤️‍🔥TIL : Today I Learned
