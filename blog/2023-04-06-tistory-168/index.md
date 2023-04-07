@@ -2,7 +2,7 @@
 title: "시멘틱 태그"
 description: "의미가 부여된 시멘틱 태그의 개념, 사용해야 하는 이유(가독성, SEO, 접근성)와 header, main, section 등 종류를 정리한 TIL."
 authors: [hyoloui]
-tags: [html-css]
+tags: [html]
 ---
 
 ❤️‍🔥 TIL : Today I Learned
