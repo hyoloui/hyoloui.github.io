@@ -2,7 +2,7 @@
 title: "선형 구조와 비선형 구조"
 description: "선형 구조와 비선형 구조의 차이를 이해하고 각각의 대표적인 자료구조 예시를 정리한 글."
 authors: [hyoloui]
-tags: [algorithm]
+tags: [data-structure]
 ---
 
 ❤️‍🔥TIL : Today I Learned
