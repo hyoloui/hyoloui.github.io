@@ -2,7 +2,7 @@
 title: "비선형 구조 - 트리, 그래프"
 description: "비선형 자료구조인 트리와 그래프의 특징과 용어, 이진 탐색 트리, 그래프 표현 방식과 BFS·DFS 탐색을 정리한 글."
 authors: [hyoloui]
-tags: [algorithm]
+tags: [data-structure]
 ---
 
 ❤️‍🔥TIL : Today I Learned
