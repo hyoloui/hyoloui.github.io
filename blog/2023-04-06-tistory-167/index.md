@@ -2,7 +2,7 @@
 title: "스택, 큐"
 description: "후입선출 구조의 스택과 선입선출 구조의 큐를 비교하고, 노드와 배열로 각각 구현한 정리."
 authors: [hyoloui]
-tags: [algorithm]
+tags: [data-structure]
 ---
 
 ❤️‍🔥TIL : Today I Learned
