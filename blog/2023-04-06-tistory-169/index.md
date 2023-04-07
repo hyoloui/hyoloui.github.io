@@ -2,7 +2,7 @@
 title: "Redux 상태관리의 주요 개념과 Recoil"
 description: "Redux의 flux 패턴 구조와 Store, Action, Reducer, Dispatch 개념, 그리고 atom·selector 기반의 Recoil과의 비교."
 authors: [hyoloui]
-tags: [react]
+tags: [react, state-management]
 ---
 
 TIL : Today I Learned
