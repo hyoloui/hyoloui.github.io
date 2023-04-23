@@ -2,7 +2,7 @@
 title: "신입 프론트엔드 기술 면접 질문 공유"
 description: "프론트엔드 개발자로 지원하며 받은 기술 질문과 컬쳐 핏 질문, 면접을 보며 느낀 점을 공유한 글."
 authors: [hyoloui]
-tags: [wil]
+tags: [career]
 ---
 
 ![면접 일러스트](./img-01.jpg)
