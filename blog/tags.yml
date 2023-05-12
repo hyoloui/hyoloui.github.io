@@ -42,3 +42,7 @@ project:
   label: Project
   permalink: /project
   description: 프로젝트 진행 기록
+career:
+  label: Career
+  permalink: /career
+  description: 커리어와 기술 성장 기록
