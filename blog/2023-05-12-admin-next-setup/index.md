@@ -2,7 +2,7 @@
 title: "입사 첫 프로젝트, 어드민 Next.js 세팅"
 description: "Assistfit 입사 후 첫 업무로 어드민 프로젝트를 Next.js 13 App Router로 세팅하고 로그인 폼까지 만든 기록."
 authors: [hyoloui]
-tags: [career, project, react, typescript]
+tags: [career, nextjs, tooling]
 ---
 
 Assistfit에 입사했다. 첫 업무는 피트니스 센터용 서비스의 어드민 페이지를 Next.js로 새로 만드는 일이었다. 저장소를 처음부터 내가 세팅하게 됐다.
