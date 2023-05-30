@@ -2,7 +2,7 @@
 title: "이벤트 관리 페이지와 첫 API 연동"
 description: "어드민 이벤트 등록·수정 화면을 만들고 API를 붙이면서 만난 한글 검색, CORS, SSR 문제와 자동 로그아웃 구현기."
 authors: [hyoloui]
-tags: [career, react, typescript, web]
+tags: [react, data-fetching, auth]
 ---
 
 어드민에서 제일 먼저 만들 화면은 이벤트 관리였다. 2주 동안 UI를 만들고, 처음으로 백엔드 API를 붙였다.
