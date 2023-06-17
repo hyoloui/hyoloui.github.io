@@ -2,7 +2,7 @@
 title: "리치 텍스트 에디터를 TinyMCE로 바꾸기까지"
 description: "이벤트·공지사항 본문 에디터를 Quill에서 CKEditor를 거쳐 TinyMCE로 옮기고, 이미지 업로드와 미리보기를 붙인 기록."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [react, editor]
 ---
 
 공지사항 페이지까지 만들고 나니 본문 에디터에 HTML 소스를 직접 넣는 기능이 필요해졌다. 그걸 붙이다가 사흘 동안 에디터를 두 번 갈아탔다.
