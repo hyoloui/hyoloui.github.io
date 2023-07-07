@@ -2,7 +2,7 @@
 title: "첫 배포, Amplify에서 Elastic Beanstalk까지"
 description: "어드민을 QA 서버에 처음 배포하면서 AWS Amplify와 next export를 시도하다가 Elastic Beanstalk와 GitHub Actions로 정착한 이틀간의 기록."
 authors: [hyoloui]
-tags: [career, git, web]
+tags: [deployment]
 ---
 
 어드민을 QA 환경에 처음 올렸다. 배포는 해본 적이 거의 없어서 이틀 동안 커밋이 70개 가까이 쌓였다. 대부분 "fix: amplify", "fix: next export" 같은 한 줄짜리다.
