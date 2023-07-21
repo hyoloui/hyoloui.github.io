@@ -2,7 +2,7 @@
 title: "QA와 운영 배포 나누기, 그리고 통계 페이지"
 description: "브랜치별 GitHub Actions 워크플로로 QA와 운영 배포를 나누고 환경변수를 주입한 과정, 같은 시기에 만든 통계 차트·엑셀 다운로드·이미지 압축 정리."
 authors: [hyoloui]
-tags: [career, git, react, web]
+tags: [deployment]
 ---
 
 QA 배포가 자리를 잡고 2주 뒤, 어드민을 운영 서버에도 올렸다. 그 사이에 통계 화면과 업로드 기능도 손봤다.
