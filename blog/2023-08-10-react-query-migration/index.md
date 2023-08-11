@@ -2,7 +2,7 @@
 title: "useEffect 대신 React Query로 옮기기"
 description: "어드민의 데이터 요청을 useEffect와 useState에서 React Query로 옮기고, 에러 처리와 클라이언트 컴포넌트 경계를 다시 잡은 기록."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [react, data-fetching, refactoring]
 ---
 
 입사 첫 주에 React Query를 설치해 놓고 석 달 동안 한 번도 쓰지 않았다. 페이지마다 `useEffect` 안에서 API를 부르고 `useState`에 담는 코드가 계속 늘어났다. 이번 주에 그걸 React Query로 옮겼다.
