@@ -2,7 +2,7 @@
 title: "Sentry를 붙이고 axios 인터셉터를 만들다"
 description: "React Query 이전 이후 mutation 캐시 갱신과 불필요한 재요청을 정리하고, Sentry 에러 모니터링과 axios 인터셉터를 도입한 기록."
 authors: [hyoloui]
-tags: [career, react, typescript, web]
+tags: [error-handling, data-fetching]
 ---
 
 React Query로 옮긴 뒤 남은 일을 정리한 2주였다. 데이터를 바꾸는 쪽을 손보고, 운영에서 나는 에러를 볼 수 있게 했다.
