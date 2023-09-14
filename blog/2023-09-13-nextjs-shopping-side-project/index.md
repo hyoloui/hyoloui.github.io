@@ -2,7 +2,7 @@
 title: "퇴근 후 사이드 프로젝트, Next.js 쇼핑몰"
 description: "회사와 다른 스택인 Redux Toolkit과 Firebase로 Next.js 쇼핑몰을 만들며 장바구니, 필터, 토스페이먼츠 결제까지 붙인 기록."
 authors: [hyoloui]
-tags: [career, project, react, javascript]
+tags: [side-project, nextjs]
 ---
 
 7월 말부터 퇴근 후에 쇼핑몰 사이드 프로젝트(nextjs-shop-ing)를 만들고 있다. 회사 어드민에서 안 쓰는 도구를 써보는 게 목표다.
