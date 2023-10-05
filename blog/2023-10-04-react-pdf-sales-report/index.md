@@ -2,7 +2,7 @@
 title: "영업 일지 상세를 PDF로 내려받기"
 description: "어드민 영업 일지 메뉴에 @react-pdf/renderer로 PDF 다운로드를 붙이고, 로딩·에러·빈 데이터 화면을 공용 컴포넌트로 정리한 기록."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [react, file-export]
 ---
 
 9월에는 어드민에 영업 일지 메뉴가 생겼다. 현장에서 작성한 일지를 목록과 상세 모달로 보여주고, 상세 내용은 PDF로 내려받을 수 있게 하는 게 요구사항이었다.
