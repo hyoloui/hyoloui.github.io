@@ -2,7 +2,7 @@
 title: "새 프로젝트에서 처음 써본 테스트 코드"
 description: "센터용 CRM 웹 프로젝트를 새로 시작하면서 Jest와 React Testing Library로 스냅샷·컴포넌트 테스트를 처음 작성하고, 사이드 프로젝트를 TypeScript로 옮긴 기록."
 authors: [hyoloui]
-tags: [career, react, typescript, javascript]
+tags: [testing]
 ---
 
 어드민에 이어 피트니스 센터에서 쓰는 CRM 웹을 새로 만들기 시작했다. 이번에는 처음부터 테스트 코드를 같이 써보기로 했다.
