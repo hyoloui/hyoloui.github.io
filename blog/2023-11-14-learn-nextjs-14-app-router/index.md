@@ -2,7 +2,7 @@
 title: "Next.js 14 공식 코스로 App Router 다시 배우기"
 description: "Next.js 14 App Router Course를 따라가며 스트리밍, searchParams 기반 검색, Server Actions, NextAuth를 익히고 회사 프로젝트에 적용해 본 기록."
 authors: [hyoloui]
-tags: [career, react, typescript, web]
+tags: [nextjs]
 ---
 
 Next.js 14가 나와서 공식 App Router Course를 처음부터 따라가 봤다(learn-next14). 반년 동안 App Router로 어드민을 만들었는데, 돌아보면 거의 모든 걸 클라이언트 컴포넌트에서 처리하고 있었다.
