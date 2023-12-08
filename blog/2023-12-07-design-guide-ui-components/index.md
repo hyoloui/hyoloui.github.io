@@ -2,7 +2,7 @@
 title: "디자인 가이드를 공용 컴포넌트로 옮기고 cn 함수로 정리하기"
 description: "CRM 웹의 디자인 가이드를 토큰과 UI 컴포넌트로 옮기고, clsx와 tailwind-merge를 묶은 cn 함수로 클래스 충돌을 정리한 기록."
 authors: [hyoloui]
-tags: [career, react, typescript, html-css]
+tags: [design-system, tailwind, ui-ux]
 ---
 
 어드민 작업이 일단락되고 피트니스 센터용 CRM 웹 개발로 넘어왔다. 마침 디자인 가이드가 나와서, 화면마다 색과 크기를 그때그때 넣던 방식을 버리고 가이드부터 코드로 옮긴 다음 화면을 그 위에 다시 쌓기로 했다.
