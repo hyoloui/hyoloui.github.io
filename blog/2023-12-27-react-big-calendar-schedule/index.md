@@ -2,7 +2,7 @@
 title: "react-big-calendar로 직원 스케줄 화면 만들기"
 description: "직원별 열로 나뉜 일간 캘린더를 react-big-calendar로 구현하고, 일정 추가를 모달 라우트로 연결한 기록."
 authors: [hyoloui]
-tags: [career, react]
+tags: [react, date-time]
 ---
 
 CRM에 '스케줄 관리' 화면이 추가됐다. 하루 단위로 직원마다 일정을 세로 열로 보여주고, 빈 칸을 드래그하면 일정을 추가하는 화면이다. 직접 그리기엔 시간 계산이 많아서 `react-big-calendar`를 골랐다.
