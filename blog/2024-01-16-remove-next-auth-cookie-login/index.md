@@ -2,7 +2,7 @@
 title: "next-auth를 걷어내고 쿠키로 로그인 처리하기"
 description: "CRM 웹에 붙였던 next-auth를 2주 만에 제거하고, 서버 액션과 쿠키, 미들웨어로 로그인을 다시 구성한 기록."
 authors: [hyoloui]
-tags: [career, react, web]
+tags: [nextjs, auth]
 ---
 
 CRM 웹에 실제 API를 붙이기 시작하면서 로그인부터 손댔다. 처음에는 next-auth를 세팅했는데, 2주 정도 쓰다가 결국 지웠다.
