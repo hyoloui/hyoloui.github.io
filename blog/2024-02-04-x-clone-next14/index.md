@@ -2,7 +2,7 @@
 title: "x-clone으로 Next.js 14 다시 공부하기"
 description: "주말과 퇴근 후 X(트위터) 클론을 만들며 parallel/intercepting route, MSW, React Query의 서버 prefetch를 익힌 한 달의 기록."
 authors: [hyoloui]
-tags: [career, project, react]
+tags: [side-project, nextjs]
 ---
 
 회사에서 App Router로 CRM을 만들고 있지만, 일정에 쫓기다 보니 이해하지 못한 채 넘어간 부분이 많았다. 1월 한 달은 주말과 퇴근 후에 X(트위터) 클론을 만들면서 Next.js 14를 처음부터 다시 짚었다.
