@@ -2,7 +2,7 @@
 title: "@next/third-parties로 GA 붙이고 페이지 메타데이터 정리하기"
 description: "Next.js 14.1로 올리면서 @next/third-parties로 Google Analytics를 붙이고, 40개 넘는 페이지에 metadata를 등록한 기록."
 authors: [hyoloui]
-tags: [career, web]
+tags: [nextjs]
 ---
 
 CRM 웹에 사용 데이터를 쌓기 위해 Google Analytics를 붙였다. 마침 Next.js 14.1에서 `@next/third-parties`가 나와서 그걸 써봤다.
