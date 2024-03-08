@@ -2,7 +2,7 @@
 title: "회원 상세 페이지를 서버와 클라이언트 경계로 나누기"
 description: "250줄이 넘던 회원 상세 page.tsx를 데이터 영역과 클라이언트 동작 영역으로 나눠 정리한 기록."
 authors: [hyoloui]
-tags: [career, react]
+tags: [nextjs, refactoring]
 ---
 
 회원 상세 페이지에 실제 API를 붙이는 차례가 왔다. 그런데 `page.tsx` 하나에 회원 정보, 상품 카드, 결제 내역 테이블이 다 들어 있어서 API를 붙이기 전에 먼저 쪼갰다.
