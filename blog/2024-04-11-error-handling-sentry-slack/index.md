@@ -2,7 +2,7 @@
 title: "에러 처리 공용 함수, Sentry, 배포 알림"
 description: "API 에러 처리를 공용 함수로 모으고, Sentry 연동과 GitHub Actions 배포 알림을 붙인 2주의 기록."
 authors: [hyoloui]
-tags: [career, web]
+tags: [error-handling, deployment]
 ---
 
 QA 서버에 배포가 돌기 시작하면서 기능 말고 운영 쪽 작업이 늘었다. 이번 2주 동안은 에러가 났을 때 어디서 잡히고 누가 알 수 있는지를 정리했다.
