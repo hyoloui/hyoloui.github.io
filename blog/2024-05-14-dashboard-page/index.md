@@ -2,7 +2,7 @@
 title: "CRM 대시보드 페이지 만들기"
 description: "센터 선택 후 첫 화면인 대시보드를 서버 컴포넌트와 searchParams 기반 날짜 이동으로 만든 기록."
 authors: [hyoloui]
-tags: [career, react]
+tags: [nextjs, ui-ux]
 ---
 
 로그인하고 센터를 고르면 지금까지는 센터 정보 페이지로 들어갔다. 이번에 그 자리에 대시보드를 만들었다. 날짜별로 가입 고객, 이용 고객, 매출, 개인 레슨 현황을 한 화면에 모아 보여주는 페이지다.
