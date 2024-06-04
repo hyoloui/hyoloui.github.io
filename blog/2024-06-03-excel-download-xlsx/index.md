@@ -2,7 +2,7 @@
 title: "xlsx로 통계 엑셀 다운로드 만들기"
 description: "개인 레슨 관리와 통계 화면의 데이터를 SheetJS(xlsx)로 브라우저에서 엑셀 파일로 만들어 내려받게 한 기록."
 authors: [hyoloui]
-tags: [career, javascript]
+tags: [file-export]
 ---
 
 개인 레슨 관리와 통계 화면에 '엑셀 다운로드' 버튼을 붙였다. 파일은 서버에서 만들지 않고, 엑셀용 데이터 조회 API의 JSON을 받아 브라우저에서 `xlsx` 라이브러리로 만든다.
