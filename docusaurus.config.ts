@@ -8,15 +8,17 @@ const config: Config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://hyoloui.github.io",
+  url: "https://hyoloui.github.io/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
+  trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "hyoloui", // Usually your GitHub org/user name.
   projectName: "hyoloui.github.io", // Usually your repo name.
+  deploymentBranch: "gh-pages",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -72,7 +74,7 @@ const config: Config = {
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/hyoloui",
+          href: "https://github.com/hyoloui/",
           label: "GitHub",
           position: "right",
         },
@@ -116,7 +118,7 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/hyoloui",
+              href: "https://github.com/hyoloui/",
             },
           ],
         },
