@@ -2,7 +2,7 @@
 title: "서버와 브라우저의 시간대 맞추기"
 description: "두 달 전 스케줄 화면에서 임시로 막아 둔 시간대 문제를 moment-timezone 기본값 설정으로 정리한 기록."
 authors: [hyoloui]
-tags: [career, javascript]
+tags: [date-time]
 ---
 
 QA 기간이라 이번 주는 버그를 잡는 커밋이 대부분이었다. 그중 두 달 넘게 마음에 걸려 있던 시간대 문제를 정리했다.
