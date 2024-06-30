@@ -4,7 +4,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "Hyoloui",
-  tagline: "Dinosaurs are cool",
+  tagline: "Learn, Life and Love",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -70,7 +70,7 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Learn",
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
@@ -87,7 +87,7 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Tutorial",
+              label: "Learn",
               to: "/docs/intro",
             },
           ],
@@ -118,7 +118,7 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/hyoloui/",
+              href: "https://github.com/hyoloui",
             },
           ],
         },
