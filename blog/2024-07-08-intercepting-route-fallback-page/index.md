@@ -2,7 +2,7 @@
 title: "Intercepting Route에 새로고침용 페이지 붙이기"
 description: "모달로 띄우던 미수금 화면이 새로고침하면 오류가 나던 문제를 일반 라우트 페이지를 추가해 해결하고, QA 서버에 IP 제한을 건 기록."
 authors: [hyoloui]
-tags: [career, react, web]
+tags: [nextjs]
 ---
 
 QA 기간이라 하루에 고치는 이슈가 열 개를 넘는다. 그중 원인을 제대로 이해하고 고친 게 하나 있어서 적어 둔다.
