@@ -2,7 +2,7 @@
 title: "이용 정지·연장 기능과 이름 세 번 바꾼 날"
 description: "회원 이용 상품의 정지·연장 사이드 모달을 서버 액션으로 연결하고, API 용어에 맞춰 폴더와 컴포넌트 이름을 정리한 기록."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [nextjs, refactoring]
 ---
 
 회원이 쓰고 있는 상품을 잠시 멈추거나 기간을 늘리는 기능을 만들었다. 기능보다 이름 때문에 더 오래 고민한 한 주였다.
