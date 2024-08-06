@@ -10,7 +10,7 @@ sidebar_position: 8
 2. 예) 최대 주파수가 3,400Hz인 음성은 초당 6,800회 이상
 3. 샘플링한 신호
    [PAM] Pulse Amplitude Modulation 신호
-   ![[PAM.png]]
+   ![PAM](./img/PAM.png)
 
 #### 양자화[Quantizing]
 
@@ -57,4 +57,4 @@ sidebar_position: 8
        5. Biphase-M
        6. Biphase_s
   3. 양극형[Bipolar]: ==+V, 0, -V== 를 사용
-     - [AMI] 비트 0은 0 전압, 비트 1은 +V와 -V를 교대로 사용 ![[양극형.png]]
+     - [AMI] 비트 0은 0 전압, 비트 1은 +V와 -V를 교대로 사용 ![양극형](./img/양극형.png)
