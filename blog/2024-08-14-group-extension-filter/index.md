@@ -2,7 +2,7 @@
 title: "단체 연장 화면과 상수 배열에서 타입 뽑기"
 description: "회원 관리에 단체 연장·연장 기록 탭을 만들면서 필터 목록 상수에서 타입을 뽑아 쓰고, 기존 공용 컴포넌트를 넓혀 재사용한 기록."
 authors: [hyoloui]
-tags: [career, typescript, react]
+tags: [typescript, react]
 ---
 
 지난달 만든 개인 연장에 이어 여러 회원의 상품을 한 번에 늘리는 단체 연장 화면을 만들고 있다. API가 아직 없어서 화면부터 잡았다.
