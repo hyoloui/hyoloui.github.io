@@ -2,7 +2,7 @@
 title: "router.refresh() 대신 revalidateTag"
 description: "기타 매출 관리에서 저장 후 화면 갱신을 router.refresh()에서 캐시 태그 무효화로 바꾸고, 반복 코드와 불필요한 state를 정리한 기록."
 authors: [hyoloui]
-tags: [career, react, web]
+tags: [nextjs, data-fetching]
 ---
 
 기타 매출 관리 화면을 사흘 동안 정리했다. 기능을 더한 건 없고, 저장한 뒤 목록이 갱신되는 방식을 바꿨다.
