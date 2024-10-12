@@ -2,7 +2,7 @@
 title: "Sentry 설정을 instrumentation으로 옮기고 에러 나누기"
 description: "흩어져 있던 Sentry 설정을 instrumentation.ts로 모으고, API 실패와 예상하지 못한 오류를 구분해 기록하도록 공통 에러 처리를 고친 기록."
 authors: [hyoloui]
-tags: [career, react, web]
+tags: [error-handling, nextjs]
 ---
 
 CRM에는 이미 Sentry가 붙어 있다. 이번 주에는 Sentry 설정 파일과, 무엇을 Sentry로 보낼지 정하는 공통 에러 처리 함수를 손봤다.
