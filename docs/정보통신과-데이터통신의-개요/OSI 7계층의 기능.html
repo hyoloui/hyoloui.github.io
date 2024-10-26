@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-정보통신과-데이터통신의-개요/OSI 7계층의 기능" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.5.2">
+<title data-rh="true">OSI 7계층의 기능 | Hyoloui</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://hyoloui.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://hyoloui.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://hyoloui.github.io/docs/정보통신과-데이터통신의-개요/OSI 7계층의 기능"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="OSI 7계층의 기능 | Hyoloui"><meta data-rh="true" name="description" content="물리 계층"><meta data-rh="true" property="og:description" content="물리 계층"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://hyoloui.github.io/docs/정보통신과-데이터통신의-개요/OSI 7계층의 기능"><link data-rh="true" rel="alternate" href="https://hyoloui.github.io/docs/정보통신과-데이터통신의-개요/OSI 7계층의 기능" hreflang="en"><link data-rh="true" rel="alternate" href="https://hyoloui.github.io/docs/정보통신과-데이터통신의-개요/OSI 7계층의 기능" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Hyoloui RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Hyoloui Atom Feed"><link rel="stylesheet" href="/assets/css/styles.43c58416.css">
+<script src="/assets/js/runtime~main.669d1e2e.js" defer="defer"></script>
+<script src="/assets/js/main.a7f909dd.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="Hyoloui Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="Hyoloui Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Hyoloui</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">Learn</a><a class="navbar__item navbar__link" href="/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/hyoloui/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">Tutorial Intro</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/tutorial---basics">Tutorial - Basics</a><button aria-label="Expand sidebar category &#x27;Tutorial - Basics&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/tutorial---extras">Tutorial - Extras</a><button aria-label="Expand sidebar category &#x27;Tutorial - Extras&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/category/정보통신과-데이터-통신의-개요">정보통신과 데이터 통신의 개요</a><button aria-label="Collapse sidebar category &#x27;정보통신과 데이터 통신의 개요&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/정보통신과-데이터통신의-개요/정보통신과 데이터 통신">정보통신과 데이터 통신</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/정보통신과-데이터통신의-개요/데이터통신 시스템의 기본 구성">데이터통신 시스템의 기본 구성</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/정보통신과-데이터통신의-개요/네트워크 정의 및 분류">네트워크 정의 및 분류</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/정보통신과-데이터통신의-개요/프로토콜">프로토콜</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/정보통신과-데이터통신의-개요/OSI 참조 모델의 개요">OSI 참조 모델의 개요</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/정보통신과-데이터통신의-개요/OSI 7계층의 기능">OSI 7계층의 기능</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/정보통신과-데이터통신의-개요/아날로그와 디지털">아날로그와 디지털</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/정보통신과-데이터통신의-개요/PCM과 라인 코딩">PCM과 라인 코딩</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/c-언어-기본-프로그램">C 언어 기본 프로그램</a><button aria-label="Expand sidebar category &#x27;C 언어 기본 프로그램&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/sql-프로그래밍">SQL 프로그래밍</a><button aria-label="Expand sidebar category &#x27;SQL 프로그래밍&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/파이썬-프로그래밍">파이썬 프로그래밍</a><button aria-label="Expand sidebar category &#x27;파이썬 프로그래밍&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/프로그래밍-언어-활용/01">프로그래밍-언어-활용</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/category/정보통신과-데이터-통신의-개요"><span itemprop="name">정보통신과 데이터 통신의 개요</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">OSI 7계층의 기능</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>OSI 7계층의 기능</h1></header><h3 class="anchor anchorWithStickyNavbar_LWe7" id="물리-계층">물리 계층<a href="#물리-계층" class="hash-link" aria-label="Direct link to 물리 계층" title="Direct link to 물리 계층">​</a></h3>
+<ul>
+<li>네트워크 케이블과 물리적 신호의 전송 규칙을 조정</li>
+<li>물리적 매체를 통해 Bit Stream을 전송하는데 필요한 인터페이스 및 전송매체의 전기적, 기계적 규격을 정의</li>
+<li>물리 계층과 관련된 네트워크 연결 장비<!-- -->
+<ul>
+<li>전기적 신호를 재생하는 장비 - 허브, 리피터</li>
+<li>기계적인 연결 장치 - 각종 커넥터, 전송 매체 연결소자</li>
+<li>디지털/아날로그 신호 변환기 - MODEM, CODEC</li>
+</ul>
+</li>
+<li>중계기[(Repeater)]: 약해진 신호를 재생, 물리적 거리 확장</li>
+<li>허브[(Hub)]: 멀티포트 리피터</li>
+<li>RS-232C<!-- -->
+<ul>
+<li>DTE와 DCE 연결을 위한 대표적인 물리 계층 프로토콜 -&gt; v.24, v.28</li>
+<li>PC 에서 USB 이전에는 모뎀, 마우스 등을 연결하는 대표적인 직렬 인터페이스</li>
+<li>USB 로 대체됨</li>
+</ul>
+</li>
+<li>널모뎀[(Null modem)]<!-- -->
+<ul>
+<li>DCE가 없이 DTE와 DTE를 직접 연결하기 위한 방법</li>
+<li>RS-232C 케이블의 송신과 수신 단자를 교차연결</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="데이터링크-계층">데이터링크 계층<a href="#데이터링크-계층" class="hash-link" aria-label="Direct link to 데이터링크 계층" title="Direct link to 데이터링크 계층">​</a></h3>
+<ul>
+<li>한 노드에서 다음 노드까지 비트 그룹[Frame]을 오류 없이 전달하는 책임<!-- -->
+<ul>
+<li>Node-to-node frame delivery</li>
+</ul>
+</li>
+<li>데이터링크 층의 주요 임무<!-- -->
+<ul>
+<li>Framing -&gt; 헤더와 트레일러를 붙여서 프레임을 구성</li>
+<li>물리주소 지정 - Physical addressing -&gt; LAN 카드 주소(MAC Address)</li>
+<li>흐름제어 - [Flow control]</li>
+<li>오류제어 - [Error control]</li>
+<li>접속제어 - [Access control]</li>
+</ul>
+</li>
+<li>데이터링크 계층의 장비<!-- -->
+<ul>
+<li>브릿지: 물리주소를 사용하여 프레임을 전달하는 장비</li>
+<li>스위치: 멀티포트 브리지</li>
+</ul>
+</li>
+<li>데이터링크 계층의 대표적인 프로토콜<!-- -->
+<ul>
+<li>[HDLC] Hign level Data Link Control</li>
+<li>[PPP] Point-to-Point Protocol 등</li>
+</ul>
+</li>
+<li>LAN에서는 데이터링크 계층을 2개의 계층으로 세분<!-- -->
+<ul>
+<li>[LLC] Logical Link Control</li>
+<li>[MAC] Medium Access Control</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="네트워크-계층">네트워크 계층<a href="#네트워크-계층" class="hash-link" aria-label="Direct link to 네트워크 계층" title="Direct link to 네트워크 계층">​</a></h3>
+<ul>
+<li>두 시스템이 서로 다른 네트워크에 접속되어 있을 경우,
+여러 네트워크 링크를 거쳐서
+<strong>출발지</strong> 장비(Source device)로부터
+<strong>목적지</strong> 장비(Destination device)까지 Packet을 전달하는 책임</li>
+<li>네트워크 계층의 주요 임무<!-- -->
+<ul>
+<li>Logical addressing - 논리 주소([IP 주소])의 지정</li>
+<li>Routing - [경로 지정]과 교환 기능 제공</li>
+</ul>
+</li>
+<li>네트워크 계층의 장비 -&gt; 라우터[(router)]</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="전송-계층">전송 계층<a href="#전송-계층" class="hash-link" aria-label="Direct link to 전송 계층" title="Direct link to 전송 계층">​</a></h3>
+<ul>
+<li>전체 메시지를 출발지 응용프로그램에서 목적지 응용 프로그램 까지 전달<!-- -->
+<ul>
+<li>process-to-process segment delivery</li>
+</ul>
+</li>
+<li>컴퓨터 내부의 프로그램으로 처리</li>
+<li>전송계층의 주요 임무<!-- -->
+<ul>
+<li>Port addressing &gt; service-point addressing</li>
+<li>Segmentation and reassembly &gt; sequence number를 사용</li>
+<li>[Connection control], [Flow control], [Error Control]
+단, 2계층의 데이터링크 계층과는 control 범위가 다름</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="세션-계층">세션 계층<a href="#세션-계층" class="hash-link" aria-label="Direct link to 세션 계층" title="Direct link to 세션 계층">​</a></h3>
+<ul>
+<li>통신 장치들 간의 대화 제어[Dialog control] &gt;&gt; 회의 진행<!-- -->
+<ul>
+<li>전이중 방식</li>
+<li>반이중 방식</li>
+</ul>
+</li>
+<li>동기화[Synchronization] &gt;&gt; Checkpoint를 삽입</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="표현-계층">표현 계층<a href="#표현-계층" class="hash-link" aria-label="Direct link to 표현 계층" title="Direct link to 표현 계층">​</a></h3>
+<ul>
+<li>데이터 표현의 차이를 극복: 번역[Translation]</li>
+<li>암호화 및 압축 수행: [Encryption] &amp; [Compression]<!-- -->
+<ul>
+<li>압축 방식<!-- -->
+<ul>
+<li>JPEG: 정지화상 압축 표준</li>
+<li>MPEG: 동영상 압축 표준 + MP3(MPEG Audio Level 3)</li>
+<li>MHEG(Multimedia and Hypermedia Experts Group)</li>
+</ul>
+</li>
+<li>암호 방식<!-- -->
+<ul>
+<li>Cryptology &gt;&gt; cryptography와cryptanalysis</li>
+<li>Cryptography &gt;&gt; Encryption, Decryption, cipher Text, plain text</li>
+<li>암호 서비스<!-- -->
+<ul>
+<li>[Confidentiality] 기밀성, 비밀성</li>
+<li>[Integrity] 무결성, 변조 방지</li>
+<li>[Authentication] 인증, 통신 상대방의 신원 확인</li>
+<li>[Non-repudiation] 부인봉쇄 &gt;&gt; 디지털 서명</li>
+<li>[Availability] 가용성 &gt;&gt; Dos(Denial of Service) 공격으로부터의 보호</li>
+</ul>
+</li>
+<li>암호 방식<!-- -->
+<ul>
+<li>암호 알고리즘은 공개하고 암호 키를 비밀로 함</li>
+<li>비밀키(대칭키) 방식<!-- -->
+<ul>
+<li>암호화 키가 복호화 키가 동일한 방식
+[DES], [AES]
+키의 관리 및 분배가 어려움</li>
+</ul>
+</li>
+<li>공개키 방식<!-- -->
+<ul>
+<li>암호화 키와 복호화 키가 서로 다름, 암호화 키는 공개<!-- -->
+<ul>
+<li>교환 알고리즘</li>
+<li>[RSA] - 소인수분해 문제</li>
+<li>[ECC] - 타원곡선 상의 유한체 이산로그</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="응용-계층">응용 계층<a href="#응용-계층" class="hash-link" aria-label="Direct link to 응용 계층" title="Direct link to 응용 계층">​</a></h3>
+<p>사용자가 네트워크에 접근할 수 있도록 하는 User interface를 제공</p>
+<ul>
+<li>[MHS]</li>
+<li>[Directory System]</li>
+<li>[FTAM]</li>
+<li>[Virtual Terminal]</li>
+<li>[CMIP ]</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/정보통신과-데이터통신의-개요/OSI 7계층의 기능.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/정보통신과-데이터통신의-개요/OSI 참조 모델의 개요"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">OSI 참조 모델의 개요</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/정보통신과-데이터통신의-개요/아날로그와 디지털"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">아날로그와 디지털</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#물리-계층" class="table-of-contents__link toc-highlight">물리 계층</a></li><li><a href="#데이터링크-계층" class="table-of-contents__link toc-highlight">데이터링크 계층</a></li><li><a href="#네트워크-계층" class="table-of-contents__link toc-highlight">네트워크 계층</a></li><li><a href="#전송-계층" class="table-of-contents__link toc-highlight">전송 계층</a></li><li><a href="#세션-계층" class="table-of-contents__link toc-highlight">세션 계층</a></li><li><a href="#표현-계층" class="table-of-contents__link toc-highlight">표현 계층</a></li><li><a href="#응용-계층" class="table-of-contents__link toc-highlight">응용 계층</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Learn</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/hyoloui" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 My Project, Inc. Built with Hyoloui.</div></div></div></footer></div>
+</body>
+</html>
