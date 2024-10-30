@@ -2,7 +2,7 @@
 title: "CRM에 테스트 코드 붙이기"
 description: "Jest 환경을 정리하고 Next.js 모듈을 mock한 뒤, 대시보드와 날짜 유틸 함수에 테스트를 쓰면서 함수의 빈틈을 찾은 기록."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [testing]
 ---
 
 2주 동안 틈틈이 CRM에 테스트 코드를 붙였다. 테스트 파일 몇 개보다 테스트가 돌아가는 환경을 만드는 데 시간이 더 들었다.
