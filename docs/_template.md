@@ -1,19 +1,32 @@
-- template
+---
+sidebar_position: 00
+title: "____"
+description: "____"
+---
 
-```c
-#include <stdio.h>
+<br/ >
 
-int main(void){
-  _따블클릭
-  return 0;
-}
+---
+
+## template
+
+> \_double_tab
+
+---
+
+<br/ >
+
+## template
+
+```sql
+_double_tab
 ```
 
 <details>
-  <summary>실행 결과</summary>
-  ```text
-    _따블클릭
-  ```
+<summary>실행 결과</summary>
+```text
+_double_tab
+```
 </details>
 
 ---
