@@ -18,13 +18,13 @@ description: "____"
 
 ## template
 
-```sql
+```c
 _double_tab
 ```
 
 <details>
 <summary>실행 결과</summary>
-```text
+```bash
 _double_tab
 ```
 </details>
