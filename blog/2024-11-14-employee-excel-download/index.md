@@ -2,7 +2,7 @@
 title: "직원별 엑셀 시트, 셀 타입까지 맞추기"
 description: "직원마다 시트를 나눈 담당 회원 엑셀을 xlsx-js-style로 꾸미면서, 숫자와 날짜가 엑셀에서 엉뚱하게 보이는 문제와 시트 정렬을 처리한 기록."
 authors: [hyoloui]
-tags: [career, javascript]
+tags: [file-export]
 ---
 
 직원 관리에 엑셀 다운로드를 붙였다. 직원 한 명당 시트 하나에 담당 회원 목록이 들어간다. 이번에는 데이터를 넣는 것보다 엑셀에서 어떻게 보이는지가 일이었다.
