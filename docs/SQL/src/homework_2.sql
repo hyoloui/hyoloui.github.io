@@ -46,6 +46,7 @@ CREATE UNIQUE INDEX idx_phone_number ON userTBL(phone_number);
 
 CREATE INDEX idx_product_name ON buyTBL(product_name);
 
+
 /**
 저장 프로시저 2개 이상 작성
 */
@@ -63,7 +64,7 @@ BEGIN
 END //
 DELIMITER ;
 
-CALL sp_user_insert('이승효', 'dltmdgy@tmdgy.com', '010-1000-2000', 'NORMAL');
+CALL sp_user_insert('이주희', 'wngml@wngml.com', '010-1111-2000', 'NORMAL');
 
 DELIMITER //
 
@@ -81,8 +82,8 @@ END //
 
 DELIMITER ;
 
-CALL sp_buy_insert(11, '자동차', 30000000, 1)
-CALL sp_buy_insert(11, '커피', 4000, 3);
+CALL sp_buy_insert(15, '곰인형', 100000, 1);
+CALL sp_buy_insert(15, '담배', 4500, 3);
 
 /**
 함수 2개 이상 작성
@@ -207,6 +208,8 @@ BEGIN
 END //
 
 DELIMITER ;
+
+CALL sp_count_users_by_type;
 
 /**
 트리거 2개 이상 작성
