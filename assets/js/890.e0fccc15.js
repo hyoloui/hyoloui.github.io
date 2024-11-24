@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkhyoloui=self.webpackChunkhyoloui||[]).push([[890],{890:(e,s,u)=>{u.d(s,{createInfoServices:()=>c.v});var c=u(7021);u(9369)}}]);
