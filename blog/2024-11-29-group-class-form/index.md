@@ -2,7 +2,7 @@
 title: "그룹 수업 폼을 쪼개고 검증은 브라우저에 맡기기"
 description: "그룹 수업 생성·수정 폼을 항목별 컴포넌트로 나누고, 폼 구조를 상수로 관리하며, 입력 검증을 HTML 기본 기능과 setCustomValidity로 처리한 기록."
 authors: [hyoloui]
-tags: [career, react, web]
+tags: [forms, react]
 ---
 
 11월 내내 그룹 수업 생성·수정 폼을 새로 만들었다. 항목이 많은 폼이라 처음부터 어떻게 나눌지를 먼저 정했다.
