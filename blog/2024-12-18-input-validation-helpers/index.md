@@ -2,7 +2,7 @@
 title: "반복되던 입력 검증 코드를 공용 함수로"
 description: "그룹 수업 폼 곳곳에 흩어진 setCustomValidity 코드를 제네릭 공용 함수로 묶고, 이벤트 객체를 mock해 테스트한 기록."
 authors: [hyoloui]
-tags: [career, typescript, react]
+tags: [forms, refactoring]
 ---
 
 12월 중순부터 그룹 수업 QA가 시작됐다. 인원 설정에 숫자 말고 다른 값이 들어간다, 지급 옵션에 세 자리를 넘겨 입력된다 같은 입력 관련 이슈가 몰려 들어왔다. 고치다 보니 같은 코드를 여러 파일에서 계속 만지고 있었다.
