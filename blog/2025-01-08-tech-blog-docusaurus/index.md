@@ -2,7 +2,7 @@
 title: "회사 기술 블로그를 Docusaurus로 세팅하기"
 description: "Assistfit 기술 블로그를 Docusaurus로 만들면서 블로그 플러그인을 감싸 홈 화면용 데이터를 만들고, footer를 swizzling한 기록."
 authors: [hyoloui]
-tags: [career, project, react]
+tags: [docusaurus]
 ---
 
 12월에 회사 기술 블로그를 만들기로 했고, 초기 세팅과 화면 작업을 맡았다. 1월 첫 주에 홈 화면까지 얼추 모양이 나왔다.
