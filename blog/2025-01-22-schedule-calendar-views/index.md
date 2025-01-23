@@ -2,7 +2,7 @@
 title: "스케줄 화면에 주간·월간 뷰 붙이기"
 description: "일간만 있던 스케줄 화면에 주간·월간 뷰를 추가하면서 뷰 상태를 URL로 옮기고, props를 복사하던 state를 걷어낸 기록."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [react, date-time]
 ---
 
 스케줄 관리 화면은 react-big-calendar로 만든 일간 뷰만 있었다. 이번에 주간과 월간을 붙이고 있다. 라이브러리 버전도 1.13에서 1.17로 올렸다.
