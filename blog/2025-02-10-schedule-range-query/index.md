@@ -2,7 +2,7 @@
 title: "스케줄 캘린더를 기간 조회로 바꾸기"
 description: "일별 조회만 하던 CRM 스케줄 화면에 주간·월간 기간 조회를 붙이고, 일정 생성·수정·삭제 뒤에도 필터가 유지되도록 고쳤다."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [date-time, data-fetching]
 ---
 
 지난달 CRM 스케줄 화면에 주간·월간 뷰를 붙였는데, 데이터는 여전히 하루 단위로만 가져오고 있었다. 이번에는 조회 방식을 손봤다.
