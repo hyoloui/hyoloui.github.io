@@ -2,7 +2,7 @@
 title: "결제 상세 모달을 layout 하나로 묶기"
 description: "상품 유형마다 따로 놀던 결제 상세 페이지를 라우트 그룹과 공통 layout으로 묶고, 사이드 내비게이션을 서버·클라이언트로 나눴다."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [nextjs, refactoring]
 ---
 
 회원 결제 상세는 모달(@modal 병렬 라우트)로 뜬다. 회원권, 개인 레슨, 락커, 운동용품마다 페이지가 따로 있었고, 모달 껍데기와 버튼 영역이 페이지마다 복사돼 있었다. 이번 주에 구조를 다시 잡았다.
