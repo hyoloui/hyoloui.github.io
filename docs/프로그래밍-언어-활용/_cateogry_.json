@@ -1,6 +1,6 @@
 {
   "label": "프로그래밍 언어 활용",
-  "position": 6,
+  "position": 5,
   "link": {
     "type": "generated-index",
     "description": "웹개발을 위하여 HTML, CSS, JavaScript의 기본적인 문법을 학습하고 동적인 웹개발을 위한 심화 기술까지 단계별로 학습하며 다양한 주제를 토대로 웹사이트를 직접 작성해 볼 수 있도록 함"
