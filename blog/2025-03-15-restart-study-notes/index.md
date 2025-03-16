@@ -2,7 +2,7 @@
 title: "공부 기록을 다시 시작했다"
 description: "Docusaurus 학습 노트 저장소의 튜토리얼 흔적을 지우고, 컴퓨터공학 과목 정리를 C 프로그래밍부터 시작했다."
 authors: [hyoloui]
-tags: [career, web]
+tags: [c-lang, cs]
 ---
 
 회사 일과 별개로 컴퓨터공학 과목을 공부하고 있다. 배운 걸 어딘가에 남기고 싶어서 오래 묵혀둔 Docusaurus 저장소를 다시 열었다.
