@@ -2,7 +2,7 @@
 title: "Sentry 9로 올리면서 instrumentation 파일로 옮기기"
 description: "어드민과 CRM의 @sentry/nextjs를 8에서 9로 올리고, 설정을 Next.js instrumentation 구조로 옮겼다."
 authors: [hyoloui]
-tags: [career, typescript, web]
+tags: [error-handling, nextjs]
 ---
 
 어드민과 CRM 두 저장소의 `@sentry/nextjs`를 8에서 9로 올렸다. 버전만 바꾸면 끝날 줄 알았는데 설정 파일 위치부터 달라졌다.
