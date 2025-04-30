@@ -2,7 +2,7 @@
 title: "오늘의 운동 기능과 HEIC 사진 업로드"
 description: "CRM 수업 화면에 오늘의 운동 탭을 만들고, 아이폰 사진(HEIC)을 압축 전에 JPEG로 바꾸는 처리를 넣었다."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [react, image]
 ---
 
 CRM 수업 화면에 '오늘의 운동' 탭을 새로 만들었다. 센터가 그날 진행하는 운동을 날짜별로 사진과 함께 등록하는 기능이다.
