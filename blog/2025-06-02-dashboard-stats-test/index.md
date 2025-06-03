@@ -2,7 +2,7 @@
 title: "대시보드 통계 변환 함수에 테스트를 붙였다"
 description: "문자열 enum의 키와 값을 헷갈린 조회 로직을 역매핑 함수로 고치고, 대시보드 통계 변환 함수를 Jest로 검증했다."
 authors: [hyoloui]
-tags: [career, typescript]
+tags: [testing, typescript]
 ---
 
 CRM 대시보드는 API 응답을 `centerStatisticsProcessing`이라는 함수로 한 번 가공해서 화면에 넘긴다. 회원, 매출, 수업 통계가 전부 이 함수를 거친다. 개인 레슨 통계를 고치다가 이 함수에 테스트를 제대로 붙였다.
