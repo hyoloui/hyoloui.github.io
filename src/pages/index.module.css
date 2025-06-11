@@ -16,8 +16,131 @@
   }
 }
 
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileImg {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.heroTitle {
+  margin-bottom: 8px;
+}
+
+.heroSubtitle {
+  margin-bottom: 8px;
+}
+
+.intro {
+  font-size: 18px;
+  color: #f3f3f3;
+  margin-bottom: 12px;
+}
+
+.linkButtons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.sectionCard {
+  max-width: 600px;
+  margin: 32px auto;
+  padding: 24px;
+  background: linear-gradient(135deg, #f8fafc 80%, #e8f0fe 100%);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1.5px solid rgba(97, 218, 251, 0.08);
+  transition: background 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+@media (prefers-color-scheme: dark) {
+  .sectionCard {
+    background: linear-gradient(135deg, #23272f 70%, #1a1d23 100%);
+    box-shadow: 0 4px 16px rgba(97, 218, 251, 0.1);
+    border: 1.5px solid rgba(97, 218, 251, 0.18);
+  }
+}
+
+.sectionCard:hover {
+  box-shadow: 0 6px 24px rgba(97, 218, 251, 0.12), 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1.5px solid #61dafb;
+  background: linear-gradient(135deg, #f0f9ff 60%, #e0e7ef 100%);
+}
+.sectionCard:hover .quote {
+  color: #23272f;
+}
+
+.sectionTitle {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #61dafb;
+}
+
+.quote {
+  font-size: 18px;
+  color: #fff;
+  font-style: italic;
+  margin: 0;
+}
+
+.devToolsWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.devToolBtn {
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: filter 0.15s;
+}
+
+.devToolBtn:hover {
+  filter: brightness(0.92);
+}
+
+.devToolIcon {
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.keywordsWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.keywordBadge {
+  background: #282c34;
+  color: #61dafb;
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 15px;
+  font-weight: 500;
 }
