@@ -81,9 +81,6 @@
   border: 1.5px solid #61dafb;
   background: linear-gradient(135deg, #f0f9ff 60%, #e0e7ef 100%);
 }
-.sectionCard:hover .quote {
-  color: #23272f;
-}
 
 .sectionTitle {
   font-size: 22px;
@@ -93,7 +90,7 @@
 
 .quote {
   font-size: 18px;
-  color: #fff;
+  color: #23272f;
   font-style: italic;
   margin: 0;
 }
