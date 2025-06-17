@@ -2,7 +2,7 @@
 title: "프론트에 박혀 있던 카테고리를 서버 기준으로 옮겼다"
 description: "헬스, 필라테스 같은 상품 카테고리를 프론트 상수에서 걷어내고, 센터별 카테고리 응답의 categoryId와 categoryName을 쓰도록 31개 파일을 정리했다."
 authors: [hyoloui]
-tags: [career, typescript, react]
+tags: [refactoring]
 ---
 
 CRM의 상품 카테고리(헬스, 필라테스, 골프 같은 것)는 처음부터 프론트 상수로 들고 있었다. `productCategory`, `lockerCategory` 같은 고정 값이 화면 곳곳에서 쓰였다. 센터마다 카테고리를 직접 정할 수 있게 되면서 이 구조를 바꿔야 했다.
