@@ -2,7 +2,7 @@
 title: "휴강 등록 화면에서 Recoil을 걷어냈다"
 description: "그룹 수업 휴강 등록의 날짜 선택 상태를 전역 atom에서 컨테이너 컴포넌트의 useState로 옮기고, 운영 요일에 맞춰 선택 가능한 날짜를 제한했다."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [state-management, forms, refactoring]
 ---
 
 그룹 수업에 휴강을 등록하는 화면을 만들었다. 날짜 범위를 고르는 단계와 메모를 적고 등록하는 단계, 두 단계로 나뉜다.
