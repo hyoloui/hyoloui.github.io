@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: 구성
+description: 알고리즘 실무 과정의 목표와 자료 구조, 알고리즘의 개념을 소개
 ---
 
 ### 자료 구조
