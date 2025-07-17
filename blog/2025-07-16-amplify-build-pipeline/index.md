@@ -2,7 +2,7 @@
 title: "Amplify 빌드 설정을 저장소로 옮기고 배포 알림 붙이기"
 description: "CRM의 Amplify 빌드 과정을 amplify.yml로 코드화하고, 환경별 페이지 제목과 Slack 배포 알림, .env 생성 스크립트를 정리했다."
 authors: [hyoloui]
-tags: [career, git, web]
+tags: [deployment]
 ---
 
 CRM은 AWS Amplify로 배포한다. 빌드 설정을 콘솔에서만 관리하고 있어서, 무엇이 어떻게 돌고 있는지 저장소만 봐서는 알 수 없었다. `amplify.yml`을 저장소에 추가해서 빌드 과정을 코드로 옮겼다.
