@@ -2,7 +2,7 @@
 title: "사내 디자인 시스템에 Chip 컴포넌트를 올렸다"
 description: "모노레포 디자인 시스템에 Chip 컴포넌트를 추가하고, 패키지 exports 설정과 배포 Slack 알림, PR 템플릿을 정리했다."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [design-system]
 ---
 
 팀에서 디자인 시스템 저장소를 따로 만들어 운영하기 시작했다. pnpm과 Turborepo로 묶은 모노레포고, primitives, ui, icon 패키지와 Storybook이 들어 있다. 이번 주에 처음으로 여기에 컴포넌트를 하나 올렸다.
