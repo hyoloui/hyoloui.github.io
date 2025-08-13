@@ -2,7 +2,7 @@
 title: "새 랜딩 페이지 저장소를 처음부터 세팅했다"
 description: "Next.js 15, Tailwind CSS 4로 새 랜딩 페이지 저장소를 만들고, 폴더 구조 원칙과 디자인 토큰, Claude Code와 Figma MCP 규칙을 정리했다."
 authors: [hyoloui]
-tags: [career, react, typescript, html-css]
+tags: [nextjs, tailwind, ai-agent]
 ---
 
 회사 랜딩 페이지를 새로 만들게 됐다. 새 저장소로 시작했고, 초기 세팅을 내가 맡았다. 여러 사람이 같이 작업할 저장소라 처음 정하는 규칙이 오래 남을 거라고 생각했다.
