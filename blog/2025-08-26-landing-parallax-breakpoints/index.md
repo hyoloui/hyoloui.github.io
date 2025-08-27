@@ -2,7 +2,7 @@
 title: "랜딩 메인의 스크롤 애니메이션과 브레이크포인트 훅"
 description: "motion으로 랜딩 메인 섹션의 패럴랙스 효과를 세 번 고쳐 만들고, CSS 토큰과 같은 기준을 쓰는 useCurrentWidth 훅을 추가했다."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [ui-ux, animation]
 ---
 
 새 랜딩 페이지에서 메인 페이지를 맡았다. 다른 페이지는 팀원들이 나눠 맡아 release 브랜치로 모으고 있다. 이번 주는 메인 섹션의 스크롤 애니메이션을 마무리하고 반응형 처리를 정리했다.
