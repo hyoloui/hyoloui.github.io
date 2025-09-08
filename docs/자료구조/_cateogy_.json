@@ -1,0 +1,8 @@
+{
+  "label": "자료구조",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "프로그램은 많은 자료들로 이루어져 이러한 자료를 효율적으로 관리하기 위해 자료구조를 학습합니다."
+  }
+}
