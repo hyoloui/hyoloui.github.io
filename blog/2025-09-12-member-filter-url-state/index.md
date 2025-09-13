@@ -2,7 +2,7 @@
 title: "회원 목록 필터 상태를 URL로 옮기기"
 description: "회원 목록 필터를 nuqs로 URL 상태로 관리하도록 바꾸고, 토큰 로딩을 Suspense 쿼리로 정리한 작업 기록."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [state-management, nextjs]
 ---
 
 CRM의 회원 목록 화면을 다시 만들고 있다. 이번 주에는 필터 상태를 어디에 둘지 정리했다.
