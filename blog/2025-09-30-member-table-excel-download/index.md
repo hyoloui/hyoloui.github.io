@@ -2,7 +2,7 @@
 title: "회원 목록 테이블과 엑셀 다운로드 정리"
 description: "TanStack Table 기반 그리드 테이블과 공통 엑셀 다운로드 훅을 만들고, 회원 목록 QA를 마무리한 기록."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [file-export, react]
 ---
 
 회원 목록 개편 QA를 마무리하고 오늘 v2.0.1로 버전을 올렸다. 9월 후반은 테이블, 엑셀 다운로드, 그리고 QA 이슈 처리로 다 지나갔다.
