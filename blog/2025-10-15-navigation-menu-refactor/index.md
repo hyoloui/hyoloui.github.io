@@ -2,7 +2,7 @@
 title: "사이드 내비게이션 메뉴 리팩터링"
 description: "서버 컴포넌트에서 가져오던 메뉴 목록을 React Query로 옮기고, 메뉴 아이콘과 prefetch 판단 로직을 정리한 기록."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [refactoring, nextjs]
 ---
 
 CRM에 메시지 페이지가 새로 생기면서 사이드 메뉴를 손봐야 했다. 메뉴 하나 추가하는 김에 메뉴 쪽 코드를 같이 정리했다.
