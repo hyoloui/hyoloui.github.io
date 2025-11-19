@@ -2,7 +2,7 @@
 title: "받는 사람 선택 테이블: 서버 필터링과 가상 스크롤"
 description: "메시지 받는 사람 선택 다이얼로그의 클라이언트 필터링을 서버 필터링으로 바꾸고, TanStack Virtual로 가상 스크롤을 적용한 기록."
 authors: [hyoloui]
-tags: [career, react, typescript, web]
+tags: [performance, react]
 ---
 
 메시지 받는 사람을 고르는 다이얼로그의 성능을 손봤다. 회원이 많은 센터를 생각하면 처음 구조로는 버티기 어려웠다.
