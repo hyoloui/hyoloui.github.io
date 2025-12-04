@@ -2,7 +2,7 @@
 title: "사이드 프로젝트 fit-hr 시작: Next.js 16과 Supabase"
 description: "트레이너와 피트니스 센터를 잇는 구인구직 사이드 프로젝트를 Next.js 16, Supabase, Claude Code로 일주일 만에 MVP까지 만든 기록."
 authors: [hyoloui]
-tags: [career, project, react, typescript]
+tags: [side-project, nextjs, supabase, ai-agent]
 ---
 
 회사 밖에서 혼자 하는 사이드 프로젝트를 시작했다. 이름은 fit-hr. 피트니스 트레이너와 센터를 잇는 구인구직 서비스다. 저장소는 공개로 열었다.
