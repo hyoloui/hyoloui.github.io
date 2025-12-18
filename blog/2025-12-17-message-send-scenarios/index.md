@@ -2,7 +2,7 @@
 title: "앱 알림과 문자, 즉시와 예약: 발송 흐름 네 갈래로 나누기"
 description: "메시지 기능에 문자 발송이 붙으면서 한 덩어리였던 확인 다이얼로그를 네 가지 시나리오로 나누고 검증 로직을 훅으로 모은 기록."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [react, forms]
 ---
 
 12월에는 메시지 기능에 문자(SMS) 발송이 붙었다. 앱 알림만 보내던 화면이라 생각보다 바뀌는 곳이 많았다.
