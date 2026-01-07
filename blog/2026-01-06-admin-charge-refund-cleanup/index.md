@@ -2,7 +2,7 @@
 title: "어드민 정비: 충전·환불 관리 화면과 Recoil 걷어내기"
 description: "메시지 충전·환불 관리 화면을 어드민에 만들면서 오래된 패턴을 정리하고, 에디터 컴포넌트를 Recoil에서 떼어낸 기록."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [refactoring, state-management]
 ---
 
 CRM에서 문자를 보내려면 센터가 미리 잔액을 충전해 둬야 한다. 그 충전과 환불, 발신번호 심사를 관리하는 화면을 사내 어드민(assistfit-admin-next)에 만들고 있다. 11월 말에 시작해서 이번 주까지 이어졌다.
