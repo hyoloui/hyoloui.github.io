@@ -2,7 +2,7 @@
 title: "팀 공용 Claude 스킬로 CRM 개발 가이드 다시 쓰기"
 description: "팀에서 같이 쓰는 Claude Code 설정 저장소의 CRM 개발 스킬을 에이전트가 읽기 좋은 구조로 다시 정리한 기록."
 authors: [hyoloui]
-tags: [career, git]
+tags: [ai-agent]
 ---
 
 팀에서 Claude Code 설정을 같이 쓰기 위한 `.claude` 저장소가 생겼다. 이번 주에는 거기 들어 있는 CRM 개발 스킬을 다시 썼다.
