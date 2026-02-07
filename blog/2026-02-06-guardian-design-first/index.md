@@ -2,7 +2,7 @@
 title: "보호자 등록 기능: 설계 문서부터 쓰고 구현하기"
 description: "회원 상세의 보호자 등록 기능을 설계 문서와 구현 계획을 먼저 쓰고 MSW 프로토타입으로 만든 뒤, 기획 변경을 설계 문서로 다시 반영한 기록."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [architecture]
 ---
 
 CRM 회원 상세에 보호자를 등록하는 기능을 만들고 있다. 이번에는 코드를 쓰기 전에 설계 문서부터 저장소에 남기는 방식으로 진행했다.
