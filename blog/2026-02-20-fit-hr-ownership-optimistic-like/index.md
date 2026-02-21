@@ -2,7 +2,7 @@
 title: "fit-hr: 역할 대신 소유로 권한 보기, 좋아요는 Optimistic Update로"
 description: "사이드 프로젝트 fit-hr의 계정 구조를 역할 기반에서 센터 소유 기반으로 바꾸고, 위치를 지도 좌표로 옮기고, 좋아요에 TanStack Query Optimistic Update를 적용한 기록."
 authors: [hyoloui]
-tags: [career, project, react, typescript]
+tags: [side-project, supabase, data-fetching]
 ---
 
 한동안 손을 놓았던 fit-hr을 다시 잡았다. 열흘 남짓 동안 계정 구조, 위치 정보, 좋아요 반응 속도를 차례로 바꿨다.
