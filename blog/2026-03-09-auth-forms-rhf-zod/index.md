@@ -2,7 +2,7 @@
 title: "회원가입·내 정보 수정 폼을 React Hook Form과 Zod로 다시 쓰기"
 description: "useFormState와 서버 액션으로 만들어진 CRM 인증 폼을 React Hook Form, Zod, React Query 조합으로 옮기고 오래된 UI 컴포넌트를 정리한 기록."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [forms]
 ---
 
 CRM 직원 회원가입과 내 정보 수정 폼을 다시 썼다. 닉네임 필드를 새로 추가해야 했는데, 기능을 얹기 전에 폼 구조부터 바꿨다.
