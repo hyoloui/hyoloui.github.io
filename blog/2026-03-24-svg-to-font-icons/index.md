@@ -2,7 +2,7 @@
 title: "SVG 아이콘을 폰트 아이콘으로 옮기고 의존성 덜어내기"
 description: "CRM의 npm 취약점을 정리하고, SVG 컴포넌트 아이콘을 사내 아이콘 폰트로 전환한 뒤 미사용 SVG와 @svgr/webpack을 제거한 기록."
 authors: [hyoloui]
-tags: [career, react, web]
+tags: [design-system, tooling]
 ---
 
 이번 주는 CRM의 의존성과 정적 자산을 정리했다. 기능 개발 사이에 미뤄 두던 일이다.
