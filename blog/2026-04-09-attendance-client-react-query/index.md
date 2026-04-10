@@ -2,7 +2,7 @@
 title: "출석 페이지를 클라이언트 조회로 옮기기"
 description: "날짜와 탭이 바뀔 때마다 서버에서 다시 그리던 출석 페이지를 React Query와 nuqs 기반 클라이언트 조회로 옮기고, moment를 date-fns로 바꾼 기록."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [data-fetching, nextjs]
 ---
 
 CRM 출석 페이지는 월간 달력과 일별 목록으로 되어 있다. 달을 넘기거나 탭을 바꿀 때마다 화면 전체가 멈칫하는 게 계속 거슬려서 데이터를 가져오는 방식을 바꿨다.
