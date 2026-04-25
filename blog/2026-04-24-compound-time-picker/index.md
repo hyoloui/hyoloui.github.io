@@ -2,7 +2,7 @@
 title: "시간 선택 컴포넌트를 컴파운드 패턴으로 만들기"
 description: "화면마다 따로 있던 시간 선택기를 단일·범위 두 종류의 공용 컴포넌트로 만들고, react-hook-form과 붙이는 방법을 세 가지로 정리한 기록."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [react, date-time]
 ---
 
 CRM에는 시간 선택기가 화면마다 따로 있었다. 공통 폴더에 하나, 결제 모달 쪽에 또 하나. 동작도 조금씩 달랐다. 공용 컴포넌트 폴더(`ui/stable`)에 단일 시간과 범위 시간 선택기를 새로 만들었다.
