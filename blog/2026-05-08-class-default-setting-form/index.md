@@ -2,7 +2,7 @@
 title: "수업 기본 설정 폼: Zod 조건부 검증과 이탈 방지 훅"
 description: "그룹 수업 예약 기본값을 정하는 설정 페이지를 react-hook-form과 Zod로 만들고, 페이지 이탈 방지 훅을 서비스에서 쓸 수 있게 고친 기록."
 authors: [hyoloui]
-tags: [career, react, typescript]
+tags: [forms]
 ---
 
 그룹 수업의 예약 오픈 시점, 예약 마감 시점, 폐강 시점을 센터 단위 기본값으로 정해 두는 "수업 기본 설정" 페이지를 만들었다. 수업을 새로 만들 때 이 값이 기본으로 채워진다.
