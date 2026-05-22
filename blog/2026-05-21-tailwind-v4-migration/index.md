@@ -2,7 +2,7 @@
 title: "Tailwind v4로 올리면서 디자인 시스템 클래스 정리하기"
 description: "Next.js 16 마이그레이션 브랜치에서 Tailwind v3를 v4로 올리고, 사내 디자인 시스템 플러그인 클래스와 tailwind-merge 충돌을 정리한 기록."
 authors: [hyoloui]
-tags: [career, html-css, web]
+tags: [tailwind, design-system, ui-ux]
 ---
 
 CRM을 Next.js 16으로 올리는 브랜치에서 Tailwind도 v3에서 v4로 올렸다. 공식 업그레이드 도구 한 번에 295개 파일이 바뀌었고 빌드도 통과했다. 그런데 화면을 보니 조건부 색상 몇 군데가 의도와 다르게 나왔다.
