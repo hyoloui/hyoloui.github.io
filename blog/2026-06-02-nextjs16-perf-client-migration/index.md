@@ -2,7 +2,7 @@
 title: "Next.js 16 성능 문제를 측정하고, 서버 조회를 전부 클라이언트로 옮기기"
 description: "Next.js 16 업그레이드 후 느려진 동적 페이지를 측정으로 원인 분리하고, Next.js 15 기반에서 SSR 조회와 Server Action을 React Query로 전면 전환한 기록."
 authors: [hyoloui]
-tags: [career, react, web]
+tags: [nextjs, performance, data-fetching]
 ---
 
 Next.js 16 브랜치를 QA 환경에 올려 보니 정적 페이지는 빨라졌는데 동적 페이지가 크게 느려졌다. 회원 상세 페이지의 문서 TTFB가 기존 392ms에서 2,813ms가 됐고, Server Action 뒤 화면이 반영되기까지 10초 가까이 걸렸다.
