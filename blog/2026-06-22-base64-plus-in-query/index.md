@@ -2,7 +2,7 @@
 title: "본인인증이 가끔 실패하던 이유, 쿼리스트링의 '+'"
 description: "본인인증 결과값(Base64)이 쿼리스트링으로 넘어오며 '+'가 공백으로 바뀌어 간헐적으로 실패하던 문제를 추적하고 고친 기록."
 authors: [hyoloui]
-tags: [career, web, javascript]
+tags: [auth, troubleshooting]
 ---
 
 CRM 로그인과 계약서 서명에는 휴대폰 본인인증이 들어간다. QA에서 본인인증이 가끔 실패한다는 제보가 이어졌는데 재현이 잘 되지 않았다.
