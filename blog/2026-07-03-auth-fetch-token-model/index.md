@@ -2,7 +2,7 @@
 title: "토큰 만료는 401로 판단한다: authFetch와 토큰 모델 정리"
 description: "access 토큰 만료 시 무한 로딩과 오인 로그아웃이 나던 문제를 '쿠키가 있으면 유효하다'는 가정에서 찾아내고, 401 재시도 코어와 토큰 수명 모델을 다시 짠 기록."
 authors: [hyoloui]
-tags: [career, typescript, web]
+tags: [auth, data-fetching]
 ---
 
 QA에서 access 토큰 수명을 일부러 짧게 줄여 테스트하자 인증 쪽 문제가 여러 개 튀어나왔다. 자동 로그인을 끈 사용자는 토큰이 만료되면 화면이 무한 로딩에 빠졌고, refresh 토큰까지 만료되면 요청마다 재시도가 반복됐다.
