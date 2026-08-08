@@ -2,7 +2,7 @@
 title: "빌드 환경 대청소, 그리고 Node 24"
 description: "운영 빌드가 EOL된 Node 20으로 돌고 있던 걸 발견하고, 그 전에 빌드 캐시·Sentry·tsconfig·테스트 설정을 근거를 확인해 가며 정리한 기록."
 authors: [hyoloui]
-tags: [career, web, typescript]
+tags: [deployment, tooling]
 ---
 
 빌드 로그를 보다가 운영 빌드가 Node 20.19.4로 돌고 있다는 걸 알았다. Node 20은 올해 4월 30일에 EOL이라 보안 패치가 더 나오지 않는다. 런타임을 올리기 전에, 그동안 "원래 그런가 보다" 하고 넘겼던 설정부터 하나씩 확인했다.
