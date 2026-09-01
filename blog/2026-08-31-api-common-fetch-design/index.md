@@ -2,7 +2,7 @@
 title: "API 호출 공통화, 설계 문서부터 리뷰 받기"
 description: "미뤄 뒀던 authFetch 연결을 다시 시작하면서 설계 문서를 먼저 쓰고 여러 차례 리뷰로 다듬은 기록. 탭 간 refresh 경합, transient 실패, 로그아웃 이후 캐시 복원 같은 경계 사례를 다뤘다."
 authors: [hyoloui]
-tags: [career, typescript, web]
+tags: [architecture, data-fetching, auth]
 ---
 
 7월에 다음 릴리스로 미뤄 둔 `authFetch` 연결 작업을 다시 잡았다. 예전 브랜치는 원격에서 지워지고 커밋만 남아 있었는데, 그사이 develop과 여섯 파일이 충돌했다. 브랜치를 되살리는 대신 설계부터 다시 쓰고 파일 단위로 복원하기로 했다.
