@@ -2,7 +2,7 @@
 title: "도메인 API 일괄 전환과 same-origin 프록시"
 description: "파일럿을 통과한 authFetch를 하루에 전 도메인으로 넓히고, 다음 날 백엔드 호출을 같은 오리진 프록시 뒤로 숨기며 실측으로 우회 범위를 정한 기록."
 authors: [hyoloui]
-tags: [career, typescript, web]
+tags: [architecture, auth, ai-agent]
 ---
 
 이달 초 파일럿 도메인이 운영 시나리오 검증을 통과했다. 어제는 나머지 도메인을 전부 `authFetch`로 옮겼고, 오늘은 그 위에 같은 오리진 프록시를 얹었다.
