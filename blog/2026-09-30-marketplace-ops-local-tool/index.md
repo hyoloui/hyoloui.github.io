@@ -2,7 +2,7 @@
 title: "개인 프로젝트: 쓰기는 잠가 두는 로컬 운영 도구"
 description: "해외 오픈마켓 판매자를 위한 로컬 운영 도구를 만들면서, 실서비스 쓰기 경로를 기본 잠금으로 두고 여러 AI 모델에게 구현과 검증을 나눠 맡긴 기록."
 authors: [hyoloui]
-tags: [career, project, react, javascript]
+tags: [side-project, ai-agent]
 ---
 
 이번 달에는 퇴근 후 개인 프로젝트로 운영 도구를 하나 만들었다. 여러 나라의 오픈마켓에 상품을 파는 판매자가 원가와 할인을 관리하는 운영 도구다. 판매자 PC에서만 돌고, 마켓의 Open API를 로컬 Node 서버가 대신 호출한다.
