@@ -24,8 +24,65 @@ Firebase - **Authentication** : **회원가입** 기능 학습 및 적용 >> Fir
 
 ## 1. UI Layout 만들기
 
-![회원가입 화면 1](./img-01.png)
-![회원가입 화면 2](./img-02.png)
+![회원가입 화면](./img-01.png)
+
+```jsx
+<KeyboardAwareScrollView
+  extraScrollHeight={150}
+  style={{ paddingHorizontal: 30 }}
+>
+  <AuthRegisterContainerView>
+    <Text style={{ color: 'red', height: 20 }}>{alertText}</Text>
+    <View>
+      <TitleText>닉네임</TitleText>
+      <InputBox
+        value={displayName}
+        onChangeText={setDisplayName}
+        placeholder="User Name"
+        ref={focusName}
+      />
+    </View>
+
+    <View>
+      <TitleText>이메일</TitleText>
+      <InputBox
+        value={email}
+        onChangeText={setEmail}
+        placeholder="예)id@domain.com"
+        ref={focusEmail}
+      />
+    </View>
+
+    <View>
+      <TitleText>비밀번호</TitleText>
+      <InputBox
+        value={password}
+        onChangeText={setPassword}
+        placeholder="Password"
+        ref={focusPw}
+        // 배포시 활성화
+        // autoComplete="password"
+        // textContentType="password"
+        // secureTextEntry={true}
+      />
+      <InputBox
+        value={passwordCheck}
+        onChangeText={setPasswordCheck}
+        placeholder="Password check"
+        ref={focusPwCheck}
+        // 배포시 활성화
+        // autoComplete="password"
+        // textContentType="password"
+        // secureTextEntry={true}
+      />
+    </View>
+
+    <Buttons onPress={() => onSubmitRegister()}>
+      <ButtonsText>회원가입</ButtonsText>
+    </Buttons>
+  </AuthRegisterContainerView>
+</KeyboardAwareScrollView>
+```
 
 UI를 만들면서 키보드 활성 시에 높이가 고정되어있는 이슈로 스크롤이 되지않아 `<KeyboardAwareScrollView/>` 라는 라이브러리를 사용했다..
 
