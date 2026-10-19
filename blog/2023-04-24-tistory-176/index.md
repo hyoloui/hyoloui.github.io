@@ -140,6 +140,4 @@ function solution(arr) {
 
 :::
 
----
-
-> 이 글은 [Tistory](https://hyoloui.tistory.com/176)에서 옮겨 온 글입니다. (원문 작성일: 2023-04-24)
+{/* 이 글은 Tistory(https://hyoloui.tistory.com/176)에서 옮겨 온 글입니다. 원문 작성일: 2023-04-24 */}
