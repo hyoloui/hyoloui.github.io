@@ -112,7 +112,7 @@ export default store;
 
 위 코드는 중앙 스테이트 관리소의 역할을 한다.
 
-import 로 생성한 모듈을 가져오고, rootReducer 안에 combineReducers 함수를 이용하여 각 모듈을 넣어주어야 한다.
+`import` 로 생성한 모듈을 가져오고, rootReducer 안에 combineReducers 함수를 이용하여 각 모듈을 넣어주어야 한다.
 
 위에서는 counter 만 넣은 상태이므로 각 프로젝트에서는 생성한 모듈을 `counter: counter` 와 같은 식으로 combineReducers 내부에 객체의 형태로 연결해준다.
 
