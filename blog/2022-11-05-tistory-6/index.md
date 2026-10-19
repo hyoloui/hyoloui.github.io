@@ -35,7 +35,7 @@ JSON 형식에 맞는 키(음식이름) 을 주문해야 밸류(실제 음식)�
 
 서울시 OpenAPI에 접속해보기
 
-- **서울시 미세먼지 OpenAPI**: `http://openapi.seoul.go.kr:8088/6d4d776b466c656533356a4b4b5872/json/RealtimeCityAir/1/99`
+- **서울시 미세먼지 OpenAPI**: `http://openapi.seoul.go.kr:8088/<YOUR_API_KEY>/json/RealtimeCityAir/1/99`
 - 크롬 익스텐션 JSONView를 설치해볼까요? 그럼 좀 더 예쁘게 JSON을 볼 수 있습니다. [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=ko)
 
 JSON은, Key:Value로 이루어져 있습니다. 자료형 Dictionary와 아주 유사하죠.
