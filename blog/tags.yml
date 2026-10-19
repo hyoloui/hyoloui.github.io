@@ -2,3 +2,43 @@ algorithm:
   label: Algorithm & Data Structure
   permalink: /algorithm
   description: 알고리즘·자료구조 문제 풀이
+javascript:
+  label: Javascript
+  permalink: /javascript
+  description: 자바스크립트 학습 기록
+typescript:
+  label: Typescript
+  permalink: /typescript
+  description: 타입스크립트 학습 기록
+react:
+  label: React.js
+  permalink: /react
+  description: 리액트 학습 기록
+react-native:
+  label: React Native
+  permalink: /react-native
+  description: 리액트 네이티브 학습 기록
+html-css:
+  label: HTML, CSS
+  permalink: /html-css
+  description: HTML과 CSS 학습 기록
+git:
+  label: Git
+  permalink: /git
+  description: Git 사용법 기록
+python:
+  label: Python
+  permalink: /python
+  description: 파이썬 학습 기록
+web:
+  label: Web
+  permalink: /web
+  description: 웹 기초 지식 기록
+wil:
+  label: WIL
+  permalink: /wil
+  description: Weekly I Learned, 한 주의 배움과 회고
+project:
+  label: Project
+  permalink: /project
+  description: 프로젝트 진행 기록
