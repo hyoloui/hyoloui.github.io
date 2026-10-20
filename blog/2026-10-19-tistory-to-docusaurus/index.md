@@ -2,7 +2,7 @@
 title: "Tistory 글 160편을 Docusaurus로 옮기기"
 description: "예전에 Tistory에 쓴 글을 이 블로그로 옮기면서, 수집 스크립트와 변환 가이드를 먼저 만들고 에이전트에게 글 단위로 이전을 맡긴 기록."
 authors: [hyoloui]
-tags: [career, project, python, git]
+tags: [docusaurus, ai-agent]
 ---
 
 2022년 11월부터 2023년 4월까지는 Tistory에 글을 썼다. 알고리즘 풀이, 자바스크립트와 리액트 정리, 주간 회고 같은 글들이다. 학습 노트는 이미 이 Docusaurus 블로그에 모으고 있어서, 예전 글도 오늘 전부 옮겨 왔다.
