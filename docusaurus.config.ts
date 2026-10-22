@@ -6,7 +6,7 @@ const config: Config = {
   title: "Hyoloui",
   tagline: "Learn, Life and Love",
   customFields: { buildDate: new Date().toISOString() },
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.svg",
 
   // Set the production url of your site here
   url: "https://hyoloui.github.io/",
@@ -26,6 +26,11 @@ const config: Config = {
 
   markdown: { mermaid: true },
   themes: ["@docusaurus/theme-mermaid"],
+
+  // 한국어 본문 글꼴. 쓰는 글자만 내려받는 dynamic subset이라 가볍다.
+  stylesheets: [
+    "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css",
+  ],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
