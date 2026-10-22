@@ -27,7 +27,7 @@ export function WorkSection() {
         Work <i>at Assistfit</i>
       </SectionHead>
       <p className={styles.sub}>{WORK_INTRO}</p>
-      <ol className={styles.rows}>
+      <ol className={styles.rows} role="list">
         {WORK_ROWS.map((r, i) => (
           <li key={r.title} className={styles.row}>
             <span className={styles.n}>{String(i + 1).padStart(2, '0')}</span>
@@ -70,7 +70,7 @@ export function GrowthSection() {
       <SectionHead id="growth">
         Growth <i>so far</i>
       </SectionHead>
-      <ol className={styles.timeline}>
+      <ol className={styles.timeline} role="list">
         {TIMELINE.map((t) => (
           <li key={t.year}>
             <div className={`${styles.mono} ${t.current ? styles.accent : ''}`}>{t.year}</div>
