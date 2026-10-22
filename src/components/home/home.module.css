@@ -186,12 +186,14 @@
   transition: color 0.18s, background-color 0.18s, border-color 0.18s,
     transform 0.18s cubic-bezier(0.2, 0.9, 0.2, 1);
 }
-.btn:hover {
-  transform: translateY(-1px);
-}
-.btn:not(.primary):hover {
-  border-color: var(--accent);
-  color: var(--accent-text);
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+  .btn:not(.primary):hover {
+    border-color: var(--accent);
+    color: var(--accent-text);
+  }
 }
 .btn.primary,
 .btn.primary:hover {
@@ -333,10 +335,12 @@
   color: var(--text-2);
   transition: background-color 0.2s, box-shadow 0.2s;
 }
-/* 레이아웃을 바꾸지 않고 좌우로 12px 더 칠한다. */
-.row:hover {
-  background-color: var(--row-hover);
-  box-shadow: -12px 0 0 var(--row-hover), 12px 0 0 var(--row-hover);
+@media (hover: hover) and (pointer: fine) {
+  /* 레이아웃을 바꾸지 않고 좌우로 12px 더 칠한다. */
+  .row:hover {
+    background-color: var(--row-hover);
+    box-shadow: -12px 0 0 var(--row-hover), 12px 0 0 var(--row-hover);
+  }
 }
 .row b {
   color: var(--text);
@@ -365,10 +369,6 @@
   padding: 18px;
   transition: border-color 0.2s, box-shadow 0.2s, transform 0.24s cubic-bezier(0.2, 0.9, 0.2, 1);
 }
-.card:hover {
-  border-color: var(--accent);
-  box-shadow: 0 10px 40px -20px var(--accent);
-}
 .card::after {
   content: '';
   position: absolute;
@@ -383,8 +383,14 @@
     transparent 45%
   );
 }
-.card:hover::after {
-  opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 10px 40px -20px var(--accent);
+  }
+  .card:hover::after {
+    opacity: 1;
+  }
 }
 .tag {
   display: inline-block;

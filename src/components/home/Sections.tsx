@@ -29,7 +29,7 @@ export function WorkSection() {
       <p className={styles.sub}>{WORK_INTRO}</p>
       <ol className={styles.rows}>
         {WORK_ROWS.map((r, i) => (
-          <li key={r.title} className={`${styles.row} ${styles.enter}`} style={{ animationDelay: `${i * 0.06}s` }}>
+          <li key={r.title} className={styles.row}>
             <span className={styles.n}>{String(i + 1).padStart(2, '0')}</span>
             <span>
               <b>{r.title}</b> · {r.desc}
@@ -50,13 +50,8 @@ export function AiSection() {
       </SectionHead>
       <p className={styles.lead}>{AI_INTRO}</p>
       <div className={styles.cards}>
-        {AI_CARDS.map((c, i) => (
-          <article
-            key={c.tag}
-            className={`${styles.card} ${styles.enter}`}
-            style={{ animationDelay: `${i * 0.06}s` }}
-            data-tilt
-          >
+        {AI_CARDS.map((c) => (
+          <article key={c.tag} className={styles.card} data-tilt>
             <span className={styles.tag}>{c.tag}</span>
             <h3>{c.title}</h3>
             <p>{c.desc}</p>
