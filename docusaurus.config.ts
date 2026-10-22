@@ -5,6 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "Hyoloui",
   tagline: "Learn, Life and Love",
+  customFields: { buildDate: new Date().toISOString() },
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -62,8 +63,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
     navbar: {
       title: "Hyoloui",
       logo: {
@@ -98,23 +97,6 @@ const config: Config = {
           ],
         },
         {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
-            },
-          ],
-        },
-        {
           title: "More",
           items: [
             {
@@ -128,7 +110,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Hyoloui.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Hyoloui(이승효)`,
     },
     prism: {
       theme: prismThemes.github,
