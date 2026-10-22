@@ -10,21 +10,27 @@
   --rule: #e2e2e2;
   --row-line: #e6e6e6;
   --accent: #7c5cff;
-  --accent-text: #6a4cff;
+  --accent-text: #6240f0;
   --tag-bg: #f1edff;
   --pink: #ff5c9a;
   --grad-a: #7c5cff;
   --grad-b: #b65cf0;
-  --grad-c: #ff5c9a;
+  --grad-c: #f0508c;
+  /* 14px 굵은 글자는 큰 글자가 아니라서 4.5:1이 필요하다. 라이트에서만 더 진한 보라→분홍을 쓴다. */
+  --grad-a-sm: #6a4cff;
+  --grad-b-sm: #a53fd8;
+  --grad-c-sm: #cc2f72;
   --btn-bg: #fff;
   --btn-border: #ddd;
   --btn-primary-bg: #111;
   --btn-primary-text: #fff;
+  --btn-primary-hover: #2e2e33;
   --blob-opacity: 0.33;
   --glow-opacity: 0.08;
   --row-hover: color-mix(in srgb, var(--accent) 5%, transparent);
 
   position: relative;
+  isolation: isolate;
   overflow: hidden;
   background: var(--bg);
   color: var(--text);
@@ -51,10 +57,14 @@
   --grad-a: #a58bff;
   --grad-b: #d27cf5;
   --grad-c: #ff7eb0;
+  --grad-a-sm: var(--grad-a);
+  --grad-b-sm: var(--grad-b);
+  --grad-c-sm: var(--grad-c);
   --btn-bg: #17171d;
   --btn-border: #3a3a46;
   --btn-primary-bg: #f1f1f4;
   --btn-primary-text: #111;
+  --btn-primary-hover: #fff;
   --blob-opacity: 0.14;
   --glow-opacity: 0.12;
 }
@@ -71,6 +81,7 @@
   filter: blur(80px);
   opacity: var(--blob-opacity);
   pointer-events: none;
+  z-index: -1;
 }
 .blobA {
   background: #a78bfa;
@@ -135,6 +146,7 @@
   opacity: var(--glow-opacity);
   filter: blur(20px);
   transform: translate(-50%, -50%);
+  z-index: -1;
   transition: left 0.4s cubic-bezier(0.2, 0.9, 0.2, 1), top 0.4s cubic-bezier(0.2, 0.9, 0.2, 1);
   pointer-events: none;
 }
@@ -186,6 +198,12 @@
   transition: color 0.18s, background-color 0.18s, border-color 0.18s,
     transform 0.18s cubic-bezier(0.2, 0.9, 0.2, 1);
 }
+.btn.primary,
+.btn.primary:hover {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border-color: var(--btn-primary-bg);
+}
 @media (hover: hover) and (pointer: fine) {
   .btn:hover {
     transform: translateY(-1px);
@@ -194,12 +212,27 @@
     border-color: var(--accent);
     color: var(--accent-text);
   }
+  .btn.primary:hover {
+    background: var(--btn-primary-hover);
+    border-color: var(--btn-primary-hover);
+  }
 }
-.btn.primary,
-.btn.primary:hover {
-  background: var(--btn-primary-bg);
-  color: var(--btn-primary-text);
-  border-color: var(--btn-primary-bg);
+.btn:focus-visible,
+.email:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.email:focus-visible {
+  border-radius: 4px;
+}
+/* 터치 기기에서는 버튼 높이를 44px로 맞춘다. */
+@media (pointer: coarse) {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding-inline: 18px;
+  }
 }
 
 /* 히어로 */
@@ -270,7 +303,7 @@
 .stat span {
   display: block;
   font-family: ui-monospace, Menlo, monospace;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.12em;
   color: var(--label);
   margin-top: 2px;
@@ -437,6 +470,9 @@
   font-weight: 700;
   line-height: 1.4;
   margin-top: 6px;
+}
+.tlTitle.grad {
+  background-image: linear-gradient(120deg, var(--grad-a-sm) 0%, var(--grad-b-sm) 50%, var(--grad-c-sm) 100%);
 }
 .tlDesc {
   font-size: 12px;
