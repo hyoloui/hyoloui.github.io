@@ -22,6 +22,7 @@
   --btn-primary-text: #fff;
   --blob-opacity: 0.33;
   --glow-opacity: 0.08;
+  --row-hover: color-mix(in srgb, var(--accent) 5%, transparent);
 
   position: relative;
   overflow: hidden;
@@ -89,9 +90,38 @@
   padding: 56px 40px 72px;
 }
 
-/* 등장 애니메이션 대상. 키프레임은 모션 작업(Task 4)에서 붙인다. */
+/* 모션 값은 yceffort.kr에서 가져왔다. 이동은 개별 속성 translate로 해서 카드 기울기(transform)와 겹치지 않게 한다. */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    translate: 0 10px;
+  }
+  100% {
+    opacity: 1;
+    translate: none;
+  }
+}
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+@keyframes flow {
+  0%,
+  100% {
+    background-position: 0% 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+}
+
 .enter {
-  animation-fill-mode: both;
+  animation: fadeUp 0.45s cubic-bezier(0.2, 0.9, 0.2, 1) both;
 }
 
 .glow {
@@ -105,6 +135,7 @@
   opacity: var(--glow-opacity);
   filter: blur(20px);
   transform: translate(-50%, -50%);
+  transition: left 0.4s cubic-bezier(0.2, 0.9, 0.2, 1), top 0.4s cubic-bezier(0.2, 0.9, 0.2, 1);
   pointer-events: none;
 }
 @media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
@@ -133,6 +164,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  animation: flow 10s ease-in-out infinite;
 }
 
 .btns {
@@ -151,6 +183,15 @@
   background: var(--btn-bg);
   color: var(--text);
   text-decoration: none;
+  transition: color 0.18s, background-color 0.18s, border-color 0.18s,
+    transform 0.18s cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+.btn:not(.primary):hover {
+  border-color: var(--accent);
+  color: var(--accent-text);
 }
 .btn.primary,
 .btn.primary:hover {
@@ -176,6 +217,8 @@
   background: var(--pink);
   margin-right: 8px;
   vertical-align: middle;
+  box-shadow: 0 0 12px var(--pink);
+  animation: pulse 1.6s ease-in-out infinite;
 }
 .title {
   font-size: clamp(26px, 6.2vw, 44px);
@@ -187,6 +230,8 @@
 }
 .line {
   display: inline-block;
+  transition: transform 0.12s ease-out;
+  will-change: transform;
 }
 .heroBody {
   display: flex;
@@ -286,6 +331,12 @@
   font-size: 14px;
   line-height: 1.6;
   color: var(--text-2);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+/* 레이아웃을 바꾸지 않고 좌우로 12px 더 칠한다. */
+.row:hover {
+  background-color: var(--row-hover);
+  box-shadow: -12px 0 0 var(--row-hover), 12px 0 0 var(--row-hover);
 }
 .row b {
   color: var(--text);
@@ -312,6 +363,28 @@
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 18px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.24s cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+.card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 10px 40px -20px var(--accent);
+}
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+  background: radial-gradient(
+    400px circle at var(--mx, 50%) var(--my, 50%),
+    color-mix(in srgb, var(--accent) 10%, transparent),
+    transparent 45%
+  );
+}
+.card:hover::after {
+  opacity: 1;
 }
 .tag {
   display: inline-block;
@@ -450,5 +523,14 @@
   }
   .contactText {
     font-size: 19px;
+  }
+}
+
+/* 동작 줄이기: 모든 애니메이션과 트랜지션을 끈다. */
+@media (prefers-reduced-motion: reduce) {
+  .page *,
+  .page *::after {
+    animation: none !important;
+    transition: none !important;
   }
 }
