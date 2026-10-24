@@ -21,9 +21,8 @@ const config: Config = {
   deploymentBranch: "gh-pages",
 
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
 
-  markdown: { mermaid: true },
+  markdown: { mermaid: true, hooks: { onBrokenMarkdownLinks: "warn" } },
   themes: ["@docusaurus/theme-mermaid"],
 
   // Even if you don't use internationalization, you can use this field to set
