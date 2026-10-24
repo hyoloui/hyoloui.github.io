@@ -1,30 +1,650 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+/*
+ * Hyoloui 디자인 토큰과 사이트 공통 스타일.
+ * 색은 OKLCH에서 뽑은 고유 값이다(참조 사이트 yceffort.kr과 같은 코드 금지).
+ * 메인(src/components/home/home.module.css)도 이 토큰만 쓴다.
  */
 
-/* You can override the default Infima variables here. */
+/* ───────────── 1. Tokens ───────────── */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* ground & ink: 보라(hue 288) 쪽으로 아주 살짝 물든 중성색 */
+  --hy-bg: #fafafd;
+  --hy-surface: #fefeff;
+  --hy-surface-2: #f2f2f8;
+  --hy-surface-3: #e9e8f1;
+  --hy-ink: #13121e;
+  --hy-ink-2: #42414d;
+  --hy-muted: #605f6a;
+  --hy-line: #dfdfe6;
+  --hy-line-strong: #c6c6d0;
+
+  /* accent: ultraviolet → orchid → rose */
+  --hy-accent: #6644de;
+  --hy-accent-strong: #542fc1;
+  --hy-accent-ink: #583ac3;
+  --hy-accent-soft: #eceaff;
+  --hy-rose: #e04663;
+  --hy-rose-ink: #c72c53;
+  --hy-grad-a: #6644de;
+  --hy-grad-b: #a948c5;
+  --hy-grad-c: #e04663;
+  /* 14px 이하 굵은 글자용(4.5:1) */
+  --hy-grad-a-sm: #583ac3;
+  --hy-grad-b-sm: #902cab;
+  --hy-grad-c-sm: #c72c53;
+  --hy-glow-a: #b3a3f7;
+  --hy-glow-b: #f9b5c3;
+
+  /* status (admonitions) */
+  --hy-ok: #007448;
+  --hy-ok-soft: #e0f7e9;
+  --hy-warn: #9a5500;
+  --hy-warn-soft: #fff0d4;
+  --hy-danger: #c92f33;
+  --hy-danger-soft: #ffe9e8;
+  --hy-info: #006aa0;
+  --hy-info-soft: #e2f3ff;
+
+  /* control */
+  --hy-btn-bg: var(--hy-surface);
+  --hy-btn-primary-bg: var(--hy-ink);
+  --hy-btn-primary-text: var(--hy-surface);
+  --hy-btn-primary-hover: #2b2a38;
+
+  /* type */
+  --hy-font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+    'Malgun Gothic', system-ui, sans-serif;
+  --hy-font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'D2Coding', monospace;
+  --hy-font-serif: Georgia, 'Times New Roman', serif;
+  --hy-label-size: 11px;
+  --hy-label-tracking: 0.18em;
+
+  /* shape & depth */
+  --hy-radius-sm: 6px;
+  --hy-radius: 10px;
+  --hy-radius-lg: 14px;
+  --hy-shadow-sm: 0 1px 2px rgb(19 18 30 / 0.05), 0 2px 8px -2px rgb(19 18 30 / 0.06);
+  --hy-shadow-md: 0 12px 32px -18px rgb(84 47 193 / 0.45);
+
+  /* motion */
+  --hy-ease-out: cubic-bezier(0.2, 0.9, 0.2, 1);
+  --hy-dur-fast: 0.18s;
+  --hy-dur: 0.24s;
+
+  --hy-focus: 0 0 0 2px var(--hy-bg), 0 0 0 4px var(--hy-accent);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --hy-bg: #0e0d14;
+  --hy-surface: #15151d;
+  --hy-surface-2: #1d1d27;
+  --hy-surface-3: #262531;
+  --hy-ink: #f0eff4;
+  --hy-ink-2: #c3c3cc;
+  --hy-muted: #9e9da7;
+  --hy-line: #2d2d37;
+  --hy-line-strong: #42414d;
+
+  --hy-accent: #aa98ff;
+  --hy-accent-strong: #bdb0ff;
+  --hy-accent-ink: #b6a8ff;
+  --hy-accent-soft: #2d284a;
+  --hy-rose: #fc899d;
+  --hy-rose-ink: #fe93a4;
+  --hy-grad-a: #aa98ff;
+  --hy-grad-b: #db90ec;
+  --hy-grad-c: #fc899d;
+  --hy-grad-a-sm: var(--hy-grad-a);
+  --hy-grad-b-sm: var(--hy-grad-b);
+  --hy-grad-c-sm: var(--hy-grad-c);
+  --hy-glow-a: #583da6;
+  --hy-glow-b: #89334c;
+
+  --hy-ok: #57c791;
+  --hy-ok-soft: #112a1d;
+  --hy-warn: #eeb154;
+  --hy-warn-soft: #33230a;
+  --hy-danger: #f47b74;
+  --hy-danger-soft: #39191a;
+  --hy-info: #68b7ed;
+  --hy-info-soft: #102635;
+
+  --hy-btn-bg: var(--hy-surface);
+  --hy-btn-primary-bg: var(--hy-ink);
+  --hy-btn-primary-text: var(--hy-bg);
+  --hy-btn-primary-hover: #fdfcff;
+
+  --hy-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.3), 0 2px 8px -2px rgb(0 0 0 / 0.35);
+  --hy-shadow-md: 0 12px 32px -18px rgb(170 152 255 / 0.4);
+}
+
+/* ───────────── 2. Infima mapping ───────────── */
+:root {
+  --ifm-color-primary: #6644de;
+  --ifm-color-primary-dark: #5d38d2;
+  --ifm-color-primary-darker: #5830cb;
+  --ifm-color-primary-darkest: #4e1dbc;
+  --ifm-color-primary-light: #6f50ea;
+  --ifm-color-primary-lighter: #7557f1;
+  --ifm-color-primary-lightest: #8166ff;
+
+  --ifm-background-color: var(--hy-bg);
+  --ifm-background-surface-color: var(--hy-surface);
+  --ifm-font-color-base: var(--hy-ink);
+  --ifm-font-color-secondary: var(--hy-muted);
+  --ifm-heading-color: var(--hy-ink);
+  --ifm-color-emphasis-300: var(--hy-line);
+  --ifm-toc-border-color: var(--hy-line);
+  --ifm-hr-background-color: var(--hy-line);
+  --ifm-hr-height: 1px;
+
+  --ifm-font-family-base: var(--hy-font-sans);
+  --ifm-heading-font-family: var(--hy-font-sans);
+  --ifm-font-family-monospace: var(--hy-font-mono);
+  --ifm-line-height-base: 1.75;
+  --ifm-heading-font-weight: 800;
+  --ifm-heading-line-height: 1.3;
+
+  --ifm-link-color: var(--hy-accent-ink);
+  --ifm-link-hover-color: var(--hy-accent-strong);
+  --ifm-link-hover-decoration: underline;
+
+  --ifm-global-radius: var(--hy-radius);
+  --ifm-code-border-radius: var(--hy-radius-sm);
+  --ifm-code-background: var(--hy-surface-2);
+  --ifm-code-font-size: 0.875em;
+  --ifm-code-padding-horizontal: 0.35em;
+  --ifm-pre-background: var(--hy-surface-2);
+  --ifm-pre-line-height: 1.6;
+  --docusaurus-highlighted-code-line-bg: color-mix(in oklab, var(--hy-accent) 14%, transparent);
+
+  --ifm-navbar-height: 4rem;
+  --ifm-navbar-background-color: color-mix(in oklab, var(--hy-bg) 82%, transparent);
+  --ifm-navbar-shadow: none;
+  --ifm-navbar-link-color: var(--hy-ink-2);
+  --ifm-navbar-link-hover-color: var(--hy-ink);
+  --ifm-navbar-link-active-color: var(--hy-accent-ink);
+
+  --ifm-menu-color: var(--hy-ink-2);
+  --ifm-menu-color-active: var(--hy-accent-ink);
+  --ifm-menu-color-background-active: var(--hy-accent-soft);
+  --ifm-menu-color-background-hover: var(--hy-surface-2);
+  --ifm-menu-link-padding-vertical: 0.4rem;
+
+  --ifm-toc-link-color: var(--hy-muted);
+  --ifm-breadcrumb-item-background-active: var(--hy-accent-soft);
+  --ifm-breadcrumb-color-active: var(--hy-accent-ink);
+
+  --ifm-card-background-color: var(--hy-surface);
+  --ifm-table-border-color: var(--hy-line);
+  --ifm-table-stripe-background: var(--hy-surface-2);
+  --ifm-table-head-background: var(--hy-surface-2);
+  --ifm-blockquote-border-color: var(--hy-line-strong);
+  --ifm-blockquote-color: var(--hy-ink-2);
+
+  --ifm-footer-background-color: var(--hy-surface-2);
+  --ifm-footer-color: var(--hy-ink-2);
+  --ifm-footer-link-color: var(--hy-ink-2);
+  --ifm-footer-link-hover-color: var(--hy-accent-ink);
+  --ifm-footer-title-color: var(--hy-muted);
+  --ifm-footer-padding-vertical: 3.5rem;
+
+  --ifm-transition-fast: var(--hy-dur-fast);
+  --ifm-transition-timing-default: var(--hy-ease-out);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #aa98ff;
+  --ifm-color-primary-dark: #a08df6;
+  --ifm-color-primary-darker: #9a87ef;
+  --ifm-color-primary-darkest: #8c79e0;
+  --ifm-color-primary-light: #b5a4ff;
+  --ifm-color-primary-lighter: #bbaaff;
+  --ifm-color-primary-lightest: #cab8ff;
+  --ifm-footer-background-color: var(--hy-surface);
+}
+
+/* footer.style이 dark여도 같은 토큰을 쓴다 */
+.footer--dark {
+  --ifm-footer-background-color: var(--hy-surface-2);
+  --ifm-footer-color: var(--hy-ink-2);
+  --ifm-footer-link-color: var(--hy-ink-2);
+  --ifm-footer-title-color: var(--hy-muted);
+}
+[data-theme='dark'] .footer--dark {
+  --ifm-footer-background-color: var(--hy-surface);
+}
+
+/* ───────────── 3. Base & browser surfaces ───────────── */
+html {
+  background: var(--hy-bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  accent-color: var(--hy-accent);
+  scrollbar-color: var(--hy-line-strong) transparent;
+}
+body {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  caret-color: var(--hy-accent);
+}
+::selection {
+  background: color-mix(in oklab, var(--hy-accent) 24%, transparent);
+  color: var(--hy-ink);
+}
+:focus-visible {
+  outline: 2px solid var(--hy-accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+a {
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+  transition: color var(--hy-dur-fast) var(--hy-ease-out);
+}
+
+/* ───────────── 4. Navbar ───────────── */
+.navbar {
+  border-bottom: 1px solid var(--hy-line);
+  backdrop-filter: saturate(160%) blur(12px);
+  -webkit-backdrop-filter: saturate(160%) blur(12px);
+}
+.navbar__title {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--hy-ink);
+}
+.navbar__item.navbar__link {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  padding: 0.375rem 0.75rem;
+  border-radius: 999px;
+  transition: color var(--hy-dur-fast) var(--hy-ease-out), background-color var(--hy-dur-fast) var(--hy-ease-out);
+}
+.navbar__item.navbar__link:hover {
+  background: var(--hy-surface-2);
+  text-decoration: none;
+}
+.navbar__link--active {
+  background: var(--hy-accent-soft);
+}
+.navbar-sidebar {
+  background: var(--hy-bg);
+}
+
+/* ───────────── 5. Footer ───────────── */
+.footer {
+  border-top: 1px solid var(--hy-line);
+}
+.footer__title {
+  font-family: var(--hy-font-mono);
+  font-size: var(--hy-label-size);
+  font-weight: 600;
+  letter-spacing: var(--hy-label-tracking);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+.footer__link-item {
+  font-size: 0.9375rem;
+  line-height: 2;
+}
+.footer__copyright {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--hy-line);
+  font-size: 0.8125rem;
+  color: var(--hy-muted);
+}
+
+/* ───────────── 6. Reading column (docs & blog) ───────────── */
+.markdown {
+  --ifm-h1-font-size: clamp(2rem, 1.55rem + 1.6vw, 2.75rem);
+  --ifm-h2-font-size: 1.625rem;
+  --ifm-h3-font-size: 1.25rem;
+  --ifm-h4-font-size: 1.0625rem;
+  font-size: 1rem;
+  color: var(--hy-ink);
+}
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+.markdown h1 {
+  margin-bottom: 1.25rem;
+}
+.markdown h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--hy-line);
+}
+.markdown hr + h2 {
+  border-top: 0;
+  padding-top: 0;
+}
+.markdown h3 {
+  margin-top: 2.25rem;
+}
+.markdown p,
+.markdown li {
+  color: var(--hy-ink);
+}
+.markdown strong {
+  font-weight: 700;
+}
+.markdown a {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in oklab, var(--hy-accent) 40%, transparent);
+}
+.markdown a:hover {
+  text-decoration-color: currentColor;
+}
+.markdown hr {
+  margin: 2.5rem 0;
+}
+.markdown blockquote {
+  border-left-width: 1px;
+  padding: 0.25rem 1rem;
+}
+.markdown img {
+  border-radius: var(--hy-radius);
+}
+.markdown table {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--hy-line);
+  border-radius: var(--hy-radius);
+  overflow: hidden;
+  font-size: 0.9375rem;
+}
+.markdown table th,
+.markdown table td {
+  border: 0;
+  border-bottom: 1px solid var(--hy-line);
+}
+.markdown table tr:last-child td {
+  border-bottom: 0;
+}
+.markdown table th {
+  font-weight: 700;
+  text-align: left;
+}
+@media (max-width: 996px) {
+  .markdown table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* inline code */
+.markdown :not(pre) > code {
+  border: 1px solid var(--hy-line);
+  color: var(--hy-ink);
+  vertical-align: 0.05em;
+}
+
+/* code blocks */
+.theme-code-block {
+  border: 1px solid var(--hy-line);
+  border-radius: var(--hy-radius-lg);
+  box-shadow: none;
+  overflow: hidden;
+}
+.theme-code-block pre {
+  background: var(--hy-surface-2) !important;
+}
+.theme-code-block [class*='codeBlockTitle_'] {
+  font-family: var(--hy-font-mono);
+  font-size: 0.8125rem;
+  background: var(--hy-surface-3);
+  border-bottom: 1px solid var(--hy-line);
+}
+
+/* admonitions: 색 막대 대신 옅은 바탕 + 1px 테두리 */
+.theme-admonition {
+  --ifm-alert-border-left-width: 1px;
+  --ifm-alert-border-width: 1px;
+  --ifm-alert-border-radius: var(--hy-radius);
+  --ifm-alert-foreground-color: var(--hy-ink);
+  box-shadow: none;
+  border-style: solid;
+}
+.theme-admonition [class*='admonitionHeading_'] {
+  font-family: var(--hy-font-mono);
+  font-size: var(--hy-label-size);
+  letter-spacing: 0.12em;
+}
+.theme-admonition.alert--secondary {
+  --ifm-alert-background-color: var(--hy-surface-2);
+  --ifm-alert-border-color: var(--hy-line);
+}
+.theme-admonition.alert--secondary [class*='admonitionHeading_'] {
+  color: var(--hy-ink-2);
+}
+.theme-admonition.alert--success {
+  --ifm-alert-background-color: var(--hy-ok-soft);
+  --ifm-alert-border-color: color-mix(in oklab, var(--hy-ok) 30%, transparent);
+}
+.theme-admonition.alert--success [class*='admonitionHeading_'] {
+  color: var(--hy-ok);
+}
+.theme-admonition.alert--info {
+  --ifm-alert-background-color: var(--hy-info-soft);
+  --ifm-alert-border-color: color-mix(in oklab, var(--hy-info) 30%, transparent);
+}
+.theme-admonition.alert--info [class*='admonitionHeading_'] {
+  color: var(--hy-info);
+}
+.theme-admonition.alert--warning {
+  --ifm-alert-background-color: var(--hy-warn-soft);
+  --ifm-alert-border-color: color-mix(in oklab, var(--hy-warn) 30%, transparent);
+}
+.theme-admonition.alert--warning [class*='admonitionHeading_'] {
+  color: var(--hy-warn);
+}
+.theme-admonition.alert--danger {
+  --ifm-alert-background-color: var(--hy-danger-soft);
+  --ifm-alert-border-color: color-mix(in oklab, var(--hy-danger) 30%, transparent);
+}
+.theme-admonition.alert--danger [class*='admonitionHeading_'] {
+  color: var(--hy-danger);
+}
+.theme-admonition svg {
+  fill: currentColor;
+}
+
+/* ───────────── 7. Docs frame ───────────── */
+.theme-doc-sidebar-container {
+  border-right-color: var(--hy-line) !important;
+}
+.theme-doc-sidebar-menu {
+  font-size: 0.9375rem;
+}
+.menu__link {
+  border-radius: var(--hy-radius-sm);
+  transition: color var(--hy-dur-fast) var(--hy-ease-out), background-color var(--hy-dur-fast) var(--hy-ease-out);
+}
+.menu__link--active:not(.menu__link--sublist) {
+  font-weight: 700;
+}
+.theme-doc-breadcrumbs .breadcrumbs__link {
+  font-size: 0.8125rem;
+  border-radius: 999px;
+}
+.table-of-contents {
+  font-size: 0.8125rem;
+}
+.table-of-contents__link--active {
+  color: var(--hy-accent-ink);
+  font-weight: 700;
+}
+.table-of-contents__left-border {
+  border-left-color: var(--hy-line);
+}
+.theme-doc-footer,
+.theme-blog-footer-edit-meta-row {
+  font-size: 0.875rem;
+}
+.theme-edit-this-page {
+  color: var(--hy-muted);
+}
+.theme-edit-this-page:hover {
+  color: var(--hy-accent-ink);
+}
+
+/* prev / next: 메인 카드와 같은 hover */
+.pagination-nav__link {
+  border: 1px solid var(--hy-line);
+  border-radius: var(--hy-radius-lg);
+  background: var(--hy-surface);
+  transition: border-color var(--hy-dur) var(--hy-ease-out), box-shadow var(--hy-dur) var(--hy-ease-out);
+}
+.pagination-nav__sublabel {
+  font-family: var(--hy-font-mono);
+  font-size: var(--hy-label-size);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--hy-muted);
+}
+.pagination-nav__label {
+  font-weight: 700;
+  color: var(--hy-ink);
+}
+@media (hover: hover) and (pointer: fine) {
+  .pagination-nav__link:hover {
+    border-color: var(--hy-accent);
+    box-shadow: var(--hy-shadow-md);
+  }
+}
+
+.theme-back-to-top-button {
+  background: var(--hy-ink);
+  border-radius: 999px;
+}
+
+/* ───────────── 8. Blog ───────────── */
+.blog-wrapper [class*='sidebarItemTitle_'] {
+  font-family: var(--hy-font-mono);
+  font-size: var(--hy-label-size);
+  font-weight: 600;
+  letter-spacing: var(--hy-label-tracking);
+  text-transform: uppercase;
+  color: var(--hy-muted);
+}
+.blog-wrapper [class*='sidebarItemLink_'] {
+  color: var(--hy-ink-2);
+  font-size: 0.875rem;
+}
+.blog-wrapper [class*='sidebarItemLink_']:hover {
+  color: var(--hy-accent-ink);
+  text-decoration: none;
+}
+.blog-wrapper [class*='sidebarItemLinkActive_'] {
+  color: var(--hy-accent-ink) !important;
+  font-weight: 700;
+}
+
+/* 글 목록: 각 글을 카드로, 제목은 잉크색 */
+.blog-list-page article,
+.blog-tags-post-list-page article {
+  padding: 2rem 2rem 1.5rem;
+  border: 1px solid var(--hy-line);
+  border-radius: var(--hy-radius-lg);
+  background: var(--hy-surface);
+}
+.blog-list-page article header h2,
+.blog-tags-post-list-page article header h2 {
+  font-size: clamp(1.375rem, 1.15rem + 0.8vw, 1.75rem);
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+.blog-wrapper article header h2 a,
+.blog-wrapper article header h1 {
+  color: var(--hy-ink);
+}
+.blog-wrapper article header h2 a:hover {
+  color: var(--hy-accent-ink);
+  text-decoration: none;
+}
+.blog-post-page article header h1 {
+  font-size: clamp(2rem, 1.55rem + 1.6vw, 2.75rem);
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+.blog-wrapper article header time,
+.blog-wrapper article header [class*='container_'] {
+  font-family: var(--hy-font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: var(--hy-muted);
+}
+.blog-wrapper .avatar__name a {
+  color: var(--hy-ink);
+}
+.blog-wrapper .avatar__subtitle {
+  color: var(--hy-muted);
+}
+@media (max-width: 996px) {
+  .blog-list-page article,
+  .blog-tags-post-list-page article {
+    padding: 1.5rem 1.25rem 1.25rem;
+  }
+}
+
+/* 태그: 메인의 라벤더 태그와 같은 모양 */
+a[class*='tag_'] {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--hy-accent-soft);
+  color: var(--hy-accent-ink);
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: background-color var(--hy-dur-fast) var(--hy-ease-out);
+}
+a[class*='tagWithCount_'] {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.4rem 0.25rem 0.75rem;
+}
+a[class*='tagWithCount_']::before,
+a[class*='tagWithCount_']::after {
+  display: none;
+}
+a[class*='tagWithCount_'] span {
+  margin: 0;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  background: var(--hy-surface);
+  color: var(--hy-ink-2);
+  font-family: var(--hy-font-mono);
+  font-size: 0.6875rem;
+}
+a[class*='tag_']:hover {
+  background: color-mix(in oklab, var(--hy-accent) 22%, var(--hy-accent-soft));
+  color: var(--hy-accent-ink);
+  text-decoration: none;
+}
+
+/* 아카이브 등 Infima hero 배너 */
+.hero--primary {
+  --ifm-hero-background-color: var(--hy-surface-2);
+  --ifm-hero-text-color: var(--hy-ink);
+  border-bottom: 1px solid var(--hy-line);
+}
+
+/* ───────────── 9. Motion preference ───────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

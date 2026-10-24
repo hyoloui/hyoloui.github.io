@@ -5,7 +5,8 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "Hyoloui",
   tagline: "Learn, Life and Love",
-  favicon: "img/favicon.ico",
+  customFields: { buildDate: new Date().toISOString() },
+  favicon: "img/favicon.svg",
 
   // Set the production url of your site here
   url: "https://hyoloui.github.io/",
@@ -24,6 +25,11 @@ const config: Config = {
 
   markdown: { mermaid: true, hooks: { onBrokenMarkdownLinks: "warn" } },
   themes: ["@docusaurus/theme-mermaid"],
+
+  // 한국어 본문 글꼴. 쓰는 글자만 내려받는 dynamic subset이라 가볍다.
+  stylesheets: [
+    "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css",
+  ],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -61,8 +67,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
     navbar: {
       title: "Hyoloui",
       logo: {
@@ -97,23 +101,6 @@ const config: Config = {
           ],
         },
         {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
-            },
-          ],
-        },
-        {
           title: "More",
           items: [
             {
@@ -127,7 +114,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Hyoloui.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Hyoloui(이승효)`,
     },
     prism: {
       theme: prismThemes.github,
