@@ -1,13 +1,8 @@
+import Link from '@docusaurus/Link';
 import { LINKS, RELEASE_DATE, STATS } from './content';
 import { yearsSince } from './motion';
 import styles from './home.module.css';
 
-const BUTTONS = [
-  { label: '이력서', href: LINKS.resume, primary: true },
-  { label: '포트폴리오', href: LINKS.portfolio },
-  { label: '자기소개', href: LINKS.intro },
-  { label: 'GitHub', href: LINKS.github },
-];
 
 export default function Hero({ buildDate }: { buildDate: string }) {
   const years = `${yearsSince(new Date(RELEASE_DATE), new Date(buildDate))}년+`;
@@ -38,17 +33,18 @@ export default function Hero({ buildDate }: { buildDate: string }) {
             요즘은 반복 작업을 AI 스킬로 만들어 팀과 나눠 쓰고, 결과는 따로 검증합니다.
           </p>
           <div className={styles.btns}>
-            {BUTTONS.map((b) => (
-              <a
-                key={b.label}
-                href={b.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${styles.btn} ${b.primary ? styles.primary : ''}`}
-              >
-                {b.label}
-              </a>
-            ))}
+            <a className={`${styles.btn} ${styles.primary}`} href={LINKS.github} target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+            <Link className={styles.btn} to={LINKS.blog}>
+              Blog
+            </Link>
+            <a className={styles.btn} href={LINKS.resume} target="_blank" rel="noopener noreferrer">
+              이력서
+            </a>
+            <a className={styles.btn} href={LINKS.portfolio} target="_blank" rel="noopener noreferrer">
+              포트폴리오
+            </a>
           </div>
         </div>
         <div className={styles.stats}>

@@ -112,17 +112,18 @@
 
 .glow {
   position: fixed;
-  left: 50%;
-  top: 20%;
+  left: 0;
+  top: 0;
   width: 500px;
   height: 500px;
   border-radius: 50%;
   background: radial-gradient(circle, var(--accent) 0%, transparent 60%);
   opacity: var(--glow-opacity);
   filter: blur(20px);
-  transform: translate(-50%, -50%);
+  /* 위치는 transform으로만 옮긴다(레이아웃 계산 없음). hook이 커서 좌표로 덮어쓴다. */
+  transform: translate3d(50vw, 20vh, 0) translate(-50%, -50%);
   z-index: -1;
-  transition: left 0.4s cubic-bezier(0.2, 0.9, 0.2, 1), top 0.4s cubic-bezier(0.2, 0.9, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.2, 1);
   pointer-events: none;
 }
 @media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
@@ -377,29 +378,12 @@
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 18px;
-  transition: border-color 0.2s, box-shadow 0.2s, transform 0.24s cubic-bezier(0.2, 0.9, 0.2, 1);
+  transition: border-color 0.2s;
 }
-.card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.2s;
-  background: radial-gradient(
-    400px circle at var(--mx, 50%) var(--my, 50%),
-    color-mix(in srgb, var(--accent) 10%, transparent),
-    transparent 45%
-  );
-}
+/* 카드는 클릭할 수 없어서 hover 강조는 테두리를 살짝 진하게만 한다. */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
-    border-color: var(--accent);
-    box-shadow: 0 10px 40px -20px var(--accent);
-  }
-  .card:hover::after {
-    opacity: 1;
+    border-color: var(--btn-border);
   }
 }
 .tag {
@@ -547,8 +531,7 @@
 
 /* 동작 줄이기: 모든 애니메이션과 트랜지션을 끈다. */
 @media (prefers-reduced-motion: reduce) {
-  .page *,
-  .page *::after {
+  .page * {
     animation: none !important;
     transition: none !important;
   }
