@@ -248,6 +248,11 @@ a {
   backdrop-filter: saturate(160%) blur(12px);
   -webkit-backdrop-filter: saturate(160%) blur(12px);
 }
+/* backdrop-filter가 fixed 자식의 기준을 navbar로 바꿔 모바일 사이드바가 navbar 높이에 갇힌다 */
+.navbar.navbar-sidebar--show {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
 .navbar__title {
   font-weight: 800;
   letter-spacing: -0.02em;

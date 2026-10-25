@@ -51,7 +51,7 @@ export function AiSection() {
       <p className={styles.lead}>{AI_INTRO}</p>
       <div className={styles.cards}>
         {AI_CARDS.map((c) => (
-          <article key={c.tag} className={styles.card} data-tilt>
+          <article key={c.tag} className={styles.card}>
             <span className={styles.tag}>{c.tag}</span>
             <h3>{c.title}</h3>
             <p>{c.desc}</p>
@@ -89,7 +89,7 @@ export function SideProjectSection() {
       <SectionHead id="side">
         Side <i>project</i>
       </SectionHead>
-      <article className={`${styles.card} ${styles.sideCard}`} data-tilt>
+      <article className={`${styles.card} ${styles.sideCard}`}>
         <div>
           <h3 className={styles.sideTitle}>
             {SIDE_PROJECT.name} <span className={styles.mono}>{SIDE_PROJECT.period}</span>
@@ -108,24 +108,24 @@ export function ContactSection() {
   return (
     <section className={`${styles.sec} ${styles.contact}`} aria-labelledby="contact">
       <h2 id="contact" className={styles.contactText}>
-        함께 일하고 싶다면{' '}
+        Email{' '}
         <a className={`${styles.grad} ${styles.email}`} href={`mailto:${LINKS.email}`}>
           {LINKS.email}
         </a>
       </h2>
       <div className={styles.btns}>
-        <a className={`${styles.btn} ${styles.primary}`} href={LINKS.resume} target="_blank" rel="noopener noreferrer">
-          이력서
-        </a>
-        <a className={styles.btn} href={LINKS.portfolio} target="_blank" rel="noopener noreferrer">
-          포트폴리오
-        </a>
-        <a className={styles.btn} href={LINKS.github} target="_blank" rel="noopener noreferrer">
+        <a className={`${styles.btn} ${styles.primary}`} href={LINKS.github} target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
         <Link className={styles.btn} to={LINKS.blog}>
           Blog
         </Link>
+        <a className={styles.btn} href={LINKS.resume} target="_blank" rel="noopener noreferrer">
+          이력서
+        </a>
+        <a className={styles.btn} href={LINKS.portfolio} target="_blank" rel="noopener noreferrer">
+          포트폴리오
+        </a>
       </div>
     </section>
   );

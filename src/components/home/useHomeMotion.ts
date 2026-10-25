@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
-import { parallaxOffset, tiltTransform } from './motion';
+import { parallaxOffset } from './motion';
 
 /**
- * 마우스가 있는 기기에서만 켜는 인터랙션: 제목 패럴랙스, 커서 글로우, 카드 3D 기울기.
+ * 마우스가 있는 기기에서만 켜는 인터랙션: 제목 패럴랙스, 커서 글로우.
  * 동작 줄이기 설정이거나 터치 기기이면 아무것도 등록하지 않는다.
  */
 export default function useHomeMotion(rootRef: React.RefObject<HTMLElement | null>): void {
@@ -14,7 +14,6 @@ export default function useHomeMotion(rootRef: React.RefObject<HTMLElement | nul
 
     const lines = root.querySelectorAll<HTMLElement>('[data-parallax-line]');
     const glow = root.querySelector<HTMLElement>('[data-cursor-glow]');
-    const cards = root.querySelectorAll<HTMLElement>('[data-tilt]');
     let raf = 0;
     let clientX = 0;
     let clientY = 0;
@@ -28,9 +27,8 @@ export default function useHomeMotion(rootRef: React.RefObject<HTMLElement | nul
         el.style.transform = `translate3d(${x}px, ${y}px, 0)`;
       });
       if (glow) {
-        // 글로우는 position: fixed라 뷰포트 좌표를 그대로 쓴다.
-        glow.style.left = `${clientX}px`;
-        glow.style.top = `${clientY}px`;
+        // 글로우는 position: fixed라 뷰포트 좌표를 그대로 쓴다. transform만 바꿔 레이아웃을 건드리지 않는다.
+        glow.style.transform = `translate3d(${clientX}px, ${clientY}px, 0) translate(-50%, -50%)`;
       }
     };
 
@@ -41,35 +39,13 @@ export default function useHomeMotion(rootRef: React.RefObject<HTMLElement | nul
     };
     window.addEventListener('pointermove', onMove, { passive: true });
 
-    const cleanups: Array<() => void> = [];
-    cards.forEach((card) => {
-      const onCardMove = (e: PointerEvent) => {
-        const r = card.getBoundingClientRect();
-        const x = (e.clientX - r.left) / r.width;
-        const y = (e.clientY - r.top) / r.height;
-        card.style.transform = tiltTransform(x, y);
-        card.style.setProperty('--mx', `${x * 100}%`);
-        card.style.setProperty('--my', `${y * 100}%`);
-      };
-      const onCardLeave = () => {
-        card.style.transform = tiltTransform(0.5, 0.5);
-      };
-      card.addEventListener('pointermove', onCardMove, { passive: true });
-      card.addEventListener('pointerleave', onCardLeave);
-      cleanups.push(() => {
-        card.removeEventListener('pointermove', onCardMove);
-        card.removeEventListener('pointerleave', onCardLeave);
-        card.style.transform = '';
-      });
-    });
-
     return () => {
       window.removeEventListener('pointermove', onMove);
-      cleanups.forEach((fn) => fn());
       if (raf) cancelAnimationFrame(raf);
       lines.forEach((el) => {
         el.style.transform = '';
       });
+      if (glow) glow.style.transform = '';
     };
   }, [rootRef]);
 }

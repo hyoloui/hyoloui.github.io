@@ -3,7 +3,6 @@ const NOTION = 'https://lilac-hacksaw-9e8.notion.site';
 export const LINKS = {
   resume: `${NOTION}/3fe090ed651a80dd8373e083e9ad75de`,
   portfolio: `${NOTION}/bd288977a9b340508f9653610b63449a`,
-  intro: `${NOTION}/297bab7539a34df9b162763f85e69090`,
   github: 'https://github.com/hyoloui',
   fitHr: 'https://github.com/hyoloui/fit-hr',
   blog: '/blog',
