@@ -13,10 +13,3 @@ export function parallaxOffset(px: number, py: number, index: number): { x: numb
   const distance = (index + 1) * 6;
   return { x: px * distance, y: py * distance };
 }
-
-/** 카드 내 커서 위치(x, y: 0~1)를 3D 기울기 transform 문자열로 바꾼다. */
-export function tiltTransform(x: number, y: number, max = 8): string {
-  const rotateX = (0.5 - y) * max;
-  const rotateY = (x - 0.5) * max;
-  return `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-}
