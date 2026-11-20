@@ -5,7 +5,7 @@ authors: [hyoloui]
 tags: [docusaurus, css, troubleshooting]
 ---
 
-지난달 이 블로그의 디자인을 통일하면서 navbar를 반투명하게 바꾸고, 뒤 내용이 흐리게 비치도록 `backdrop-filter`를 넣었다. 그 뒤로 모바일에서 햄버거 메뉴를 열면 사이드바가 헤더 높이만큼만 그려졌다.
+사흘 전 이 블로그의 디자인을 통일하면서 navbar를 반투명하게 바꾸고, 뒤 내용이 흐리게 비치도록 `backdrop-filter`를 넣었다. 그 뒤로 모바일에서 햄버거 메뉴를 열면 사이드바가 헤더 높이만큼만 그려졌다.
 
 <!--truncate-->
 
